@@ -1,0 +1,33 @@
+name: Verify source release
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ['3.11', '3.13']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m unittest discover -s tests -v
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - run: node --check mailcairn/static/app.js
+      - run: node --check mailcairn/static/i18n.js
+      - run: node --check mailcairn/static/startup.js
+      - run: node scripts/check_frontend.mjs
+      - run: node scripts/check_i18n.mjs
+      - run: node scripts/check_connections.mjs
+      - run: node scripts/check_startup.mjs
+      - run: python scripts/release_check.py

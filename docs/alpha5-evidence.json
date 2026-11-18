@@ -1,0 +1,42 @@
+{
+  "version": "0.1.0-alpha.5",
+  "date": "2026-11-16",
+  "status": "internal_candidate_not_published_or_owner_accepted",
+  "exe_sha256": "32a5d73df73efd2f9d2361fbb1d325fd7811a32e19d49b30065e28044895bd67",
+  "synthetic_data_only": true,
+  "local_packaging": {"source_files_checked": 173, "source_filename": "MailCairn-0.1.0-alpha.5-source.zip", "windows_filename": "MailCairn-0.1.0-alpha.5-windows-x64.zip", "windows_files": 983, "windows_bytes": 13060517, "windows_sha256": "87d7a893dab73214228e16f47ef8768e3cb9454400c054da876faaf7a9ffec23", "windows_crc_and_member_bytes_verified": true, "source_identity": "See the accompanying ALPHA5-ARTIFACTS.json and .sha256; regenerate the source ZIP after any document changes.", "privacy_scope": "Finite allowed-path, synthetic-fixture, credential-marker and machine-path scans; Windows bytes also checked for the tested username/workspace markers. Screenshot pixels were inspected separately. Not comprehensive security or privacy certification."},
+  "checks": {
+    "python": {"passed": 201, "skipped": 0, "seconds": 25.768, "runtime_warnings_as_errors": true},
+    "store_parse_targeted": {"passed": 55},
+    "frontend": {"passed": 61},
+    "connections": {"passed": 31},
+    "bilingual": {"passed": 16},
+    "bundle_audit": {"passed": true, "native_components": 21, "application_modules": 10, "static_assets": 9, "desktop_notices": 21, "project_notices": 3, "license_hashes": 19},
+    "actual_exe_http": {"passed_groups": 8, "restore_mode": "extracted_source_helper_http"},
+    "real_browser": {
+      "driver": "ego-browser",
+      "build": "actual_alpha5_exe",
+      "background_import": {"old_row_evicted_from_50_result_page": true, "desktop_body_preserved": true, "desktop_scroll_before": 180, "desktop_scroll_after": 180, "desktop_focus_transferred_to_reader": true, "narrow_body_reading_and_back_focus_preserved": true, "narrow_viewport_px": 390, "narrow_document_px": 375},
+      "history_and_receipt_navigation": {"keyboard_enter": true, "search_focused_before_response": true, "later_filter_focus_preserved_after_delayed_response": true},
+      "mbox_roundtrip": {"eml_imported": 3, "downloaded_via_ui": true, "exported_records": 3, "top_level_content_length_removed": true, "body_content_length_retained": true, "same_archive_reimport_added": 1, "same_archive_reimport_duplicates": 2, "original_eml_download_equals_input": true, "original_eml_sha256": "b31a879dac38df39f02da774abad371c997b4b1da2d770bcd0bd511ee7821f0a"},
+      "final_archive": {"messages": 58, "raw_hashes_sqlite_fts_and_receipts_passed": true},
+      "test_conditions": "Synthetic imports and bounded job/search response gates allowed inspection while reading; no provider credentials or live email network requests.",
+      "stable_visual_check": {"public_fixture_imported_via_ui": true, "messages": 20, "screenshots": ["alpha5-home-zh.png", "alpha5-reader-zh.png", "alpha5-reader-en.png", "alpha5-reader-en-narrow.png"], "desktop_viewport": [1440, 1080], "narrow_viewport": [390, 844], "narrow_document_width": 375, "reader_transform": "none", "finite_animations_running_at_capture": 0, "narrow_open_positions_reader_at_viewport_top": true, "pixels_inspected": true, "subsequent_startup_link_navigations_passed": 2, "initial_navigation_observation": "Static opening screen without app.js initialization until same-page reload; cause unconfirmed. Later checks do not explain this observation.", "browser_task_finished_and_owned_exe_stopped": true}
+    }
+  },
+  "interpretation": [
+    "Content-Length removal changes only the export copy; the original database bytes and EML download remain intact.",
+    "One converted message has different raw bytes and is added on reimport; two unchanged messages deduplicate. This is exact-byte, not semantic, deduplication.",
+    "Astra independently reviewed the minimal MBOX fix and reran its focused test. A second frontend independent review did not complete and is not counted.",
+    "Earlier screenshots captured part of the reader entrance and are local QA only; later alpha5-prefixed public screenshots were captured after finite animations ended."
+  ],
+  "not_established": [
+    "Alpha.5 native desktop file-picker restore acceptance; the earlier native test used the dated Alpha.4 build",
+    "Second clean Windows machine, physical mobile, low-end hardware, screen-reader output or other browser engines",
+    "Real Gmail automatic new-message arrival; initial 120-message retrieval passed historically but later TLS EOF/reset remains unresolved",
+    "Paid Proton Bridge synchronization; free Proton is unsupported by the official Bridge path",
+    "Physical power-loss durability, cross-file credential crash atomicity or external security certification",
+    "Owner visual acceptance, external user pilot, retention, payment or product-market fit",
+    "Publication or owner approval; local archive identities and finite packaging checks are recorded in ALPHA5-ARTIFACTS.json beside the packages"
+  ]
+}

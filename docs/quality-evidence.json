@@ -1,0 +1,468 @@
+{
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "tail": [
+        "test_verify_detects_modified_raw_and_restore_rejects_it (test_store.StoreTests.test_verify_detects_modified_raw_and_restore_rejects_it) ... ok",
+        "test_verify_detects_stale_search_index (test_store.StoreTests.test_verify_detects_stale_search_index) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 74 tests in 8.526s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "mailcairn/static/app.js"
+      ],
+      "exit_code": 0,
+      "tail": []
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check_frontend.mjs"
+      ],
+      "exit_code": 0,
+      "tail": [
+        "PASS verification failure releases busy state and preserves error",
+        "PASS cancel during job creation is forwarded before polling",
+        "PASS receipt failures prevent a green verification result",
+        "PASS corrupt preferences fall back and unrecognized values are discarded",
+        "PASS reduced motion and unavailable storage still leave preferences usable",
+        "",
+        "11 frontend checks passed. Node v24.22.1; DOM shim only, not a browser/layout/accessibility audit."
+      ]
+    },
+    {
+      "command": [
+        "python",
+        "scripts/release_check.py"
+      ],
+      "exit_code": 0,
+      "tail": [
+        "{",
+        "  \"files_checked\": 53,",
+        "  \"problems\": [],",
+        "  \"passed\": true",
+        "}"
+      ]
+    }
+  ],
+  "source_sha256": {
+    "mailcairn/store.py": "a1bd13a38562a51268d5386192d6fae5d9debe7f85f7aeecb802194cb29dcaad",
+    "mailcairn/server.py": "5e98db53ba975b3a61362b61fd43b6c512bade92c95c49b771733de1ace28b07",
+    "mailcairn/static/app.js": "53e863100fcbee46932525f7100c2be2c0c16edbb83f255f306abb14ce5f7dfe",
+    "mailcairn/static/index.html": "3ef9be88410ededab4837cb5e81393abba9002089d3310651463b889fb76455d",
+    "mailcairn/static/style.css": "a7b7ee43eb3252e5c76af41c49c6ef6198a3c6e457622745ea5a4d01353d396a"
+  },
+  "browser": {
+    "axe-reader-matrix": [
+      {
+        "theme": "light",
+        "accent": "cedar",
+        "violations": [],
+        "passes": 26
+      },
+      {
+        "theme": "light",
+        "accent": "blue",
+        "violations": [],
+        "passes": 26
+      },
+      {
+        "theme": "light",
+        "accent": "umber",
+        "violations": [],
+        "passes": 26
+      },
+      {
+        "theme": "dark",
+        "accent": "cedar",
+        "violations": [],
+        "passes": 26
+      },
+      {
+        "theme": "dark",
+        "accent": "blue",
+        "violations": [],
+        "passes": 26
+      },
+      {
+        "theme": "dark",
+        "accent": "umber",
+        "violations": [],
+        "passes": 26
+      }
+    ],
+    "axe-theme-matrix-stable": [
+      {
+        "theme": "light",
+        "accent": "cedar",
+        "preferencesOpen": true,
+        "actual": {
+          "theme": "light",
+          "accent": "cedar",
+          "type": "standard",
+          "density": "comfortable",
+          "motion": "on"
+        },
+        "violations": [],
+        "passes": 18
+      },
+      {
+        "theme": "light",
+        "accent": "blue",
+        "preferencesOpen": true,
+        "actual": {
+          "theme": "light",
+          "accent": "blue",
+          "type": "standard",
+          "density": "comfortable",
+          "motion": "on"
+        },
+        "violations": [],
+        "passes": 18
+      },
+      {
+        "theme": "light",
+        "accent": "umber",
+        "preferencesOpen": true,
+        "actual": {
+          "theme": "light",
+          "accent": "umber",
+          "type": "standard",
+          "density": "comfortable",
+          "motion": "on"
+        },
+        "violations": [],
+        "passes": 18
+      },
+      {
+        "theme": "dark",
+        "accent": "cedar",
+        "preferencesOpen": true,
+        "actual": {
+          "theme": "dark",
+          "accent": "cedar",
+          "type": "standard",
+          "density": "comfortable",
+          "motion": "on"
+        },
+        "violations": [],
+        "passes": 18
+      },
+      {
+        "theme": "dark",
+        "accent": "blue",
+        "preferencesOpen": true,
+        "actual": {
+          "theme": "dark",
+          "accent": "blue",
+          "type": "standard",
+          "density": "comfortable",
+          "motion": "on"
+        },
+        "violations": [],
+        "passes": 18
+      },
+      {
+        "theme": "dark",
+        "accent": "umber",
+        "preferencesOpen": true,
+        "actual": {
+          "theme": "dark",
+          "accent": "umber",
+          "type": "standard",
+          "density": "comfortable",
+          "motion": "on"
+        },
+        "violations": [],
+        "passes": 18
+      }
+    ],
+    "browser-motion-state": {
+      "active": {
+        "runCount": 1,
+        "width": 708,
+        "cssWidth": 472
+      },
+      "reduced": {
+        "mode": "off",
+        "previewDisabled": true,
+        "runs": 0
+      },
+      "visibility": {
+        "events": [
+          {
+            "hidden": true,
+            "runs": 0
+          },
+          {
+            "hidden": false,
+            "runs": 0
+          }
+        ],
+        "runs": 0,
+        "hidden": false
+      }
+    },
+    "browser-motion-render": {
+      "lit": {
+        "litPixels": 66583,
+        "width": 708,
+        "height": 187
+      },
+      "drawCalls": 91,
+      "elapsedMs": 6535.299999999814,
+      "runs": 0
+    },
+    "browser-long-tasks": {
+      "windowMs": 7703.200000000186,
+      "longTasks": [],
+      "activeLoops": 0
+    },
+    "browser-preference-resilience": {
+      "corrupt": {
+        "dataset": {
+          "theme": "light",
+          "accent": "cedar",
+          "type": "standard",
+          "density": "comfortable",
+          "motion": "on"
+        },
+        "count": "20"
+      },
+      "unavailable": {
+        "applied": "light",
+        "note": "Applied for this visit · storage unavailable"
+      }
+    },
+    "browser-palette": [
+      {
+        "theme": "light",
+        "color": "rgb(41, 45, 40)",
+        "background": "rgb(250, 248, 242)",
+        "transition": "0.16s, 0.16s"
+      },
+      {
+        "theme": "dark",
+        "color": "rgb(231, 229, 217)",
+        "background": "rgb(35, 40, 35)",
+        "transition": "0.16s, 0.16s"
+      }
+    ],
+    "browser-restored-security": {
+      "subject": "<img src=x onerror=alert(1)> Synthetic inert-content check",
+      "probeExecuted": false,
+      "readerExecutableNodes": 0,
+      "externalResources": []
+    }
+  },
+  "release_boundary": {
+    "platform": "Windows",
+    "python": "3.13.1",
+    "method": "Temporary synthetic ROOT, real check() and source_files(); no project test files modified",
+    "passed": 21,
+    "skipped": 3,
+    "failures": 0,
+    "cases": [
+      {
+        "case": "clean synthetic skeleton",
+        "status": "passed",
+        "files_checked": 17
+      },
+      {
+        "case": "archive.sqlite3-wal",
+        "status": "passed",
+        "expected": "rejected",
+        "problems": [
+          "Private/runtime artifact: archive.sqlite3-wal"
+        ]
+      },
+      {
+        "case": "archive.db-journal",
+        "status": "passed",
+        "expected": "rejected",
+        "problems": [
+          "Private/runtime artifact: archive.db-journal"
+        ]
+      },
+      {
+        "case": "nested/cache.sqlite3-shm",
+        "status": "passed",
+        "expected": "rejected",
+        "problems": [
+          "Private/runtime artifact: nested\\cache.sqlite3-shm"
+        ]
+      },
+      {
+        "case": ".env.local",
+        "status": "passed",
+        "expected": "rejected",
+        "problems": [
+          "Private/runtime artifact: .env.local"
+        ]
+      },
+      {
+        "case": "nested/key.p12",
+        "status": "passed",
+        "expected": "rejected",
+        "problems": [
+          "Private/runtime artifact: nested\\key.p12"
+        ]
+      },
+      {
+        "case": "nested/key.PFX",
+        "status": "passed",
+        "expected": "rejected",
+        "problems": [
+          "Private/runtime artifact: nested\\key.PFX"
+        ]
+      },
+      {
+        "case": ".upload-fragment",
+        "status": "passed",
+        "expected": "rejected",
+        "problems": [
+          "Private/runtime artifact: .upload-fragment"
+        ]
+      },
+      {
+        "case": ".mailcairn.lock",
+        "status": "passed",
+        "expected": "rejected",
+        "problems": [
+          "Private/runtime artifact: .mailcairn.lock"
+        ]
+      },
+      {
+        "case": "personal.eml",
+        "status": "passed",
+        "expected": "rejected",
+        "problems": [
+          "Mail outside synthetic fixtures: personal.eml"
+        ]
+      },
+      {
+        "case": "nested/personal.mbox",
+        "status": "passed",
+        "expected": "rejected",
+        "problems": [
+          "Mail outside synthetic fixtures: nested\\personal.mbox"
+        ]
+      },
+      {
+        "case": "tests/personal.eml",
+        "status": "passed",
+        "expected": "rejected",
+        "problems": [
+          "Mail outside synthetic fixtures: tests\\personal.eml"
+        ]
+      },
+      {
+        "case": "tests/fixtures-old/personal.eml",
+        "status": "passed",
+        "expected": "rejected",
+        "problems": [
+          "Mail outside synthetic fixtures: tests\\fixtures-old\\personal.eml"
+        ]
+      },
+      {
+        "case": "fixture/personal.MBOX",
+        "status": "passed",
+        "expected": "rejected",
+        "problems": [
+          "Mail outside synthetic fixtures: fixture\\personal.MBOX"
+        ]
+      },
+      {
+        "case": "tests/fixtures/synthetic.eml",
+        "status": "passed",
+        "expected": "allowed",
+        "problems": []
+      },
+      {
+        "case": "tests/fixtures/subfolder/synthetic.mbox",
+        "status": "passed",
+        "expected": "allowed",
+        "problems": []
+      },
+      {
+        "case": ".env.example",
+        "status": "passed",
+        "expected": "allowed",
+        "problems": []
+      },
+      {
+        "case": "data/archive.sqlite3",
+        "status": "passed",
+        "expected": "excluded from packaged source",
+        "problems": []
+      },
+      {
+        "case": "work/personal.eml",
+        "status": "passed",
+        "expected": "excluded from packaged source",
+        "problems": []
+      },
+      {
+        "case": "scripts/synthetic_secret.py",
+        "status": "passed",
+        "expected": "rejected",
+        "problems": [
+          "Possible credential in scripts\\synthetic_secret.py"
+        ]
+      },
+      {
+        "case": "scripts/synthetic_secret.mjs",
+        "status": "passed",
+        "expected": "rejected",
+        "problems": [
+          "Possible credential in scripts\\synthetic_secret.mjs"
+        ]
+      },
+      {
+        "case": "symlink existing",
+        "status": "skipped",
+        "reason": "OSError",
+        "errno": 22,
+        "winerror": 1314
+      },
+      {
+        "case": "symlink broken",
+        "status": "skipped",
+        "reason": "OSError",
+        "errno": 22,
+        "winerror": 1314
+      },
+      {
+        "case": "symlink directory",
+        "status": "skipped",
+        "reason": "OSError",
+        "errno": 22,
+        "winerror": 1314
+      }
+    ]
+  },
+  "status": "Local review candidate; user acceptance and publication pending",
+  "candidate_link_audit": {
+    "local_links_checked": 71,
+    "broken_links": [],
+    "changed_since_integrated_tests": [],
+    "owner_acceptance": "pending",
+    "publication": "not authorized"
+  }
+}

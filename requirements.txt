@@ -1,0 +1,2 @@
+# No pip dependencies. Requires Python 3.11+ with sqlite3 / SQLite FTS5.
+# Run directly: python app.py

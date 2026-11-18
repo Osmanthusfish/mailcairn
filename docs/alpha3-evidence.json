@@ -1,0 +1,171 @@
+{
+  "version": "0.1.0-alpha.3",
+  "timestamp_utc": "2026-11-10T08:44:46.358794+00:00",
+  "published": false,
+  "python_regression": {
+    "passed": 181,
+    "seconds": 32.247
+  },
+  "javascript_checks": {
+    "frontend": 41,
+    "i18n": 15,
+    "connections": 24,
+    "total": 80
+  },
+  "changes": [
+    "Consistent punctuation-separated CJK/Latin AND terms",
+    "Latin filename fragments with a partial attachment-name index",
+    "Input immediately invalidates old search responses and disables stale export/pagination"
+  ],
+  "benchmarks": {
+    "baseline": "benchmark-mixed-baseline.json",
+    "final": "benchmark-mixed-final.json",
+    "same_fixture_and_script_hashes": true,
+    "limitations": "One cached local synthetic workload; not a general capacity or frame-rate guarantee"
+  },
+  "browser": {
+    "synthetic": true,
+    "formerly_missing_queries_each_returned": 250,
+    "language_switch_preserved_search": true,
+    "query": "保修，CAFÉ",
+    "results": "250 messages",
+    "overflow": false,
+    "reducedMotion": true,
+    "runningAnimations": 0,
+    "longTasks": [],
+    "mobile_back_preserved_results": true,
+    "screenshots": [
+      "screenshots/alpha3-mixed-search-zh.png",
+      "screenshots/alpha3-mixed-reader-en-mobile.png"
+    ],
+    "screenshots_visually_reviewed": true,
+    "sampling_limit": "No >50ms long tasks observed in this short interaction sample; not proof of sustained FPS or low-end device performance",
+    "harness_notes": "Screenshot attempts required restoring the minimized QA window and resolving its target; Back was retried with the narrow viewport reapplied within the action round."
+  },
+  "download_readback": {
+    "synthetic": true,
+    "attachment_bytes": 65536,
+    "download_matches_generated_bytes": true,
+    "sha256": "789d7d1a01f16c1328d4c2fca77d91387b50fd133c79d69d126f2cd28d686948"
+  },
+  "filtered_export_readback": {
+    "synthetic": true,
+    "imported": 250,
+    "matched": 250,
+    "exact_original_hash_set_match": true,
+    "verification": {
+      "checked": 250,
+      "total": 250,
+      "mismatches": [],
+      "sqlite": "ok",
+      "search_index": "ok",
+      "receipts": "ok",
+      "cancelled": false,
+      "verified_at": "2026-11-10T08:39:12.088870+00:00",
+      "scope": "Stored message bytes, local search index and import-receipt consistency only. This cannot prove the original export contains every email in your account."
+    }
+  },
+  "http_smoke": {
+    "source-smoke": {
+      "status": "passed",
+      "timestamp_utc": "2026-11-10T08:39:44.428501+00:00",
+      "checks": [
+        "authentication_and_empty_archive_guard",
+        "host_origin_and_mutation_guards",
+        "version_and_bundled_assets",
+        "mbox_import_search_body_raw_attachment_and_receipt",
+        "duplicate_mbox_escaping_and_unchanged_export_roundtrip",
+        "invalid_files_and_recovery",
+        "archive_integrity",
+        "source_restore_no_overwrite_and_restored_http_readback"
+      ],
+      "mode": "source_http_helper",
+      "restore_mode": "extracted_source_helper_http",
+      "limitations": [
+        "Not a clean-machine test",
+        "Native Restore dialog not exercised",
+        "Source helper does not exercise app.py or desktop startup",
+        "MBOX export quotes From-lines; EML and backup preserve exact raw bytes"
+      ],
+      "version": {
+        "expected": "0.1.0-alpha.3",
+        "http_server": "MailCairn/0.1.0-alpha.3",
+        "visible_page": true
+      },
+      "synthetic": {
+        "messages": 2,
+        "attachment_bytes": 303,
+        "mbox_sha256": "50c923abf0c7746e3ba7987bceebd4c5df0d630c558bc81a1d384fd06efea5ad",
+        "backup_bytes": 49152
+      }
+    },
+    "binary-smoke": {
+      "status": "passed",
+      "timestamp_utc": "2026-11-10T08:41:13.613186+00:00",
+      "checks": [
+        "authentication_and_empty_archive_guard",
+        "host_origin_and_mutation_guards",
+        "version_and_bundled_assets",
+        "mbox_import_search_body_raw_attachment_and_receipt",
+        "duplicate_mbox_escaping_and_unchanged_export_roundtrip",
+        "invalid_files_and_recovery",
+        "archive_integrity",
+        "source_restore_no_overwrite_and_restored_http_readback"
+      ],
+      "mode": "running_instance",
+      "restore_mode": "extracted_source_helper_http",
+      "limitations": [
+        "Not a clean-machine test",
+        "Native Restore dialog not exercised",
+        "Source helper does not exercise app.py or desktop startup",
+        "MBOX export quotes From-lines; EML and backup preserve exact raw bytes"
+      ],
+      "version": {
+        "expected": "0.1.0-alpha.3",
+        "http_server": "MailCairn/0.1.0-alpha.3",
+        "visible_page": true
+      },
+      "synthetic": {
+        "messages": 2,
+        "attachment_bytes": 303,
+        "mbox_sha256": "50c923abf0c7746e3ba7987bceebd4c5df0d630c558bc81a1d384fd06efea5ad",
+        "backup_bytes": 49152
+      }
+    }
+  },
+  "build_audit": {
+    "file": "desktop-build-alpha3.json",
+    "exe_sha256": "60114895ca3ac83120d12d88e5d2ced32979769aeb677aba2657744f573976ef"
+  },
+  "compatibility": {
+    "schema": 1,
+    "preindex_reopen_regression": true,
+    "frozen_alpha2_restore_read_verify_backup_manual_check": true
+  },
+  "real_provider_status": {
+    "initial_gmail_archived": 120,
+    "automatic_gmail_arrival": "unresolved TLS connection failure",
+    "evidence": "gmail-live-evidence.json",
+    "new_network_probes": false
+  },
+  "limitations": [
+    "User visual acceptance pending",
+    "Paid Proton and clean second Windows computer untested",
+    "Native Restore dialog and source CMD not re-exercised this iteration",
+    "Unsigned Windows build",
+    "No external upload"
+  ],
+  "packaging": {
+    "source_files": 158,
+    "binary_files": 1149,
+    "checks": [
+      "source release boundary",
+      "ZIP CRC and all member bytes reopened",
+      "checked source equality",
+      "tested code and runtime unchanged",
+      "scoped username and workspace path byte scan"
+    ],
+    "checksums": "Alpha 3 .sha256 files and ALPHA3-ARTIFACTS.json in deliverables",
+    "scope": "Finite release-boundary and byte-pattern checks, not a general security certification"
+  }
+}

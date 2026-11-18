@@ -1,0 +1,144 @@
+{
+  "version": "0.1.0-alpha.1",
+  "date": "2026-11-09",
+  "published": false,
+  "python_regression": {
+    "passed": 175,
+    "seconds": 32.624
+  },
+  "javascript_checks": {
+    "frontend": 40,
+    "i18n": 15,
+    "connections": 20
+  },
+  "smoke": {
+    "source-smoke.json": {
+      "status": "passed",
+      "timestamp_utc": "2026-11-09T14:02:31.755813+00:00",
+      "checks": [
+        "authentication_and_empty_archive_guard",
+        "host_origin_and_mutation_guards",
+        "version_and_bundled_assets",
+        "mbox_import_search_body_raw_attachment_and_receipt",
+        "duplicate_mbox_escaping_and_unchanged_export_roundtrip",
+        "invalid_files_and_recovery",
+        "archive_integrity",
+        "source_restore_no_overwrite_and_restored_http_readback"
+      ],
+      "mode": "source_http_helper",
+      "restore_mode": "extracted_source_helper_http",
+      "limitations": [
+        "Not a clean-machine test",
+        "Native Restore dialog not exercised",
+        "Source helper does not exercise app.py or desktop startup",
+        "MBOX export quotes From-lines; EML and backup preserve exact raw bytes"
+      ],
+      "version": {
+        "expected": "0.1.0-alpha.1",
+        "http_server": "MailCairn/0.1.0-alpha.1",
+        "visible_page": true
+      },
+      "synthetic": {
+        "messages": 2,
+        "attachment_bytes": 303,
+        "mbox_sha256": "50c923abf0c7746e3ba7987bceebd4c5df0d630c558bc81a1d384fd06efea5ad",
+        "backup_bytes": 45056
+      }
+    },
+    "binary-smoke.json": {
+      "status": "passed",
+      "timestamp_utc": "2026-11-09T14:03:33.696409+00:00",
+      "checks": [
+        "authentication_and_empty_archive_guard",
+        "host_origin_and_mutation_guards",
+        "version_and_bundled_assets",
+        "mbox_import_search_body_raw_attachment_and_receipt",
+        "duplicate_mbox_escaping_and_unchanged_export_roundtrip",
+        "invalid_files_and_recovery",
+        "archive_integrity",
+        "source_restore_no_overwrite_and_restored_http_readback"
+      ],
+      "mode": "running_instance",
+      "restore_mode": "extracted_source_helper_http",
+      "limitations": [
+        "Not a clean-machine test",
+        "Native Restore dialog not exercised",
+        "Source helper does not exercise app.py or desktop startup",
+        "MBOX export quotes From-lines; EML and backup preserve exact raw bytes"
+      ],
+      "version": {
+        "expected": "0.1.0-alpha.1",
+        "http_server": "MailCairn/0.1.0-alpha.1",
+        "visible_page": true
+      },
+      "synthetic": {
+        "messages": 2,
+        "attachment_bytes": 303,
+        "mbox_sha256": "50c923abf0c7746e3ba7987bceebd4c5df0d630c558bc81a1d384fd06efea5ad",
+        "backup_bytes": 45056
+      }
+    },
+    "source-cli-foreign-smoke.json": {
+      "status": "passed",
+      "timestamp_utc": "2026-11-09T14:04:57.744624+00:00",
+      "checks": [
+        "authentication_and_empty_archive_guard",
+        "host_origin_and_mutation_guards",
+        "version_and_bundled_assets",
+        "mbox_import_search_body_raw_attachment_and_receipt",
+        "duplicate_mbox_escaping_and_unchanged_export_roundtrip",
+        "invalid_files_and_recovery",
+        "archive_integrity",
+        "source_restore_no_overwrite_and_restored_http_readback"
+      ],
+      "mode": "running_instance",
+      "restore_mode": "extracted_source_helper_http",
+      "limitations": [
+        "Not a clean-machine test",
+        "Native Restore dialog not exercised",
+        "Source helper does not exercise app.py or desktop startup",
+        "MBOX export quotes From-lines; EML and backup preserve exact raw bytes"
+      ],
+      "version": {
+        "expected": "0.1.0-alpha.1",
+        "http_server": "MailCairn/0.1.0-alpha.1",
+        "visible_page": true
+      },
+      "synthetic": {
+        "messages": 2,
+        "attachment_bytes": 303,
+        "mbox_sha256": "50c923abf0c7746e3ba7987bceebd4c5df0d630c558bc81a1d384fd06efea5ad",
+        "backup_bytes": 45056
+      }
+    }
+  },
+  "binary_privacy": {
+    "bundle_files_scanned": 983,
+    "base_library_members_decoded": 154,
+    "current_username_and_workspace_byte_hits": 0,
+    "python_code_objects_filename_checked": 10034,
+    "absolute_python_code_filenames": 0,
+    "screenshots_visually_reviewed": 26,
+    "scope": "Targeted UTF-8/UTF-16 byte scan and Python archive inspection, not exhaustive decompression of native code"
+  },
+  "browser": {
+    "actual_extracted_exe": true,
+    "chinese_reader_1440px": true,
+    "english_switch_and_search": true,
+    "english_reader_390px_no_horizontal_overflow": true,
+    "mail_data": "synthetic only"
+  },
+  "pending": [
+    "Real Gmail: initial import passed, new-message polling TLS failure/recovery unresolved",
+    "Paid Proton Bridge account unavailable",
+    "Second clean Windows computer unavailable",
+    "Windows signing and external binary distribution conditions",
+    "Remote CI not run"
+  ],
+  "limitations": [
+    "Native Restore window not rerun in this Alpha pass; earlier review evidence only",
+    "Fresh extraction on this computer is not clean-machine validation",
+    "MBOX From-line escaping can alter raw hashes and allow duplicate reimport; raw EML and backups preserve bytes"
+  ],
+  "real_gmail_update": "gmail-live-evidence.json: initial import passed; new-message polling TLS failure unresolved"
+}

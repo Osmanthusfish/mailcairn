@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-16",
+  "result": "pass",
+  "fixture": "250 unique synthetic text-only emails; no private data or network",
+  "source_mbox_sha256": "108bc44f839006e05761d074019d76a76d84151d759f28017475e43f3654cbc5",
+  "instrumentation": "Runtime parse_message gate at call 125; production thresholds unchanged. Parent force-killed only its own subprocess using Popen.kill on Windows. Gate had a 60-second deadline; parent wait was bounded.",
+  "production_batch_thresholds": {"items": 100, "bytes": 4194304, "seconds": 0.25},
+  "before_termination": {
+    "import_connection_messages": 124,
+    "import_connection_receipt_items": 124,
+    "import_connection_in_transaction": true,
+    "independent_connection_messages": 100,
+    "independent_connection_receipt_items": 100,
+    "durable_receipt_status": "running",
+    "durable_receipt_total": 100
+  },
+  "after_termination": {
+    "child_exit_code": 1,
+    "committed_messages_preserved": 100,
+    "uncommitted_messages_rolled_back": 24,
+    "recovered_receipt_status": "interrupted",
+    "recovered_receipt_total": 100,
+    "sqlite": "ok",
+    "search_index": "ok",
+    "receipt_consistency": "ok",
+    "raw_hash_mismatches": 0
+  },
+  "reimport": {
+    "status": "complete",
+    "total": 250,
+    "added": 150,
+    "duplicates": 100,
+    "skipped": 0,
+    "final_messages": 250,
+    "original_hash_sets_match_source": true,
+    "all_stored_hashes_match_raw": true,
+    "unique_token_queries": 250,
+    "exactly_one_match_per_query": true,
+    "sqlite": "ok",
+    "search_index": "ok",
+    "receipt_consistency": "ok"
+  },
+  "limits": [
+    "Source Store API only; actual packaged EXE not exercised by this experiment",
+    "Forceful process termination is not physical power loss",
+    "Synthetic small text emails; not large attachments or real mailbox sync",
+    "Does not test cross-file credentials/settings durability"
+  ]
+}

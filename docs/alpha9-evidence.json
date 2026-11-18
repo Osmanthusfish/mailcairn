@@ -1,0 +1,72 @@
+{
+  "version": "0.1.0-alpha.9",
+  "date": "2026-11-18",
+  "status": "internal_candidate_not_published_or_owner_accepted",
+  "exe_sha256": "54181677c6dd415191c7f7bb46737d33cf17ec574094eff81c9775bc08188a35",
+  "synthetic_data_only": true,
+  "implemented": [
+    "Single-key shortcuts accept uppercase as well as lowercase letter keys (e.g. Caps Lock or Shift+G/H/I) while continuing to ignore modified chords, open modals, text inputs and disabled shortcut preference",
+    "Reading room single-key shortcut help now explicitly documents the comma (,) shortcut alongside /, I, G, H and ? in both English and Simplified Chinese",
+    "Getting started Step 04 documents the Windows desktop window 'Restore backup…' / '恢复备份…' workflow ahead of the source CLI restore command, with matching bilingual translations",
+    "Language switcher pill buttons (.language-option) enforce white-space: nowrap to prevent CJK wrapping under narrow headers or zoom",
+    "IMAP socket NETWORK_TIMEOUT increased from 10s to 20s for higher-latency links while keeping TLS verification and bounded literal limits unchanged",
+    "GitHub front-door README/README.zh-CN streamlined, CI/development check commands aligned, broken relative historical doc links fixed, and 19 unreferenced historical process screenshots (~2.98 MiB) removed"
+  ],
+  "checks": {
+    "python_full": {
+      "passed": 202,
+      "skipped": 0,
+      "seconds": 51.035,
+      "runtime_warnings_as_errors": true
+    },
+    "frontend": {"passed": 66},
+    "connections": {"passed": 31},
+    "bilingual": {"passed": 19},
+    "startup": {"passed": 11},
+    "markdown_internal_links": {"broken": 0},
+    "bundle_audit": {
+      "passed": true,
+      "native_components": 21,
+      "application_modules": 10,
+      "static_assets": 10,
+      "desktop_notices": 21,
+      "project_notices": 3,
+      "manifest_hashes": 19
+    },
+    "actual_exe_http": {
+      "passed_groups": 8,
+      "restore_mode": "extracted_source_helper_http"
+    },
+    "ego_browser_actual_exe": {
+      "ui_import_sample_mbox_20_messages": true,
+      "uppercase_shift_h_g_i_and_comma_shortcuts_verified": true,
+      "bilingual_comma_shortcut_help_verified": true,
+      "bilingual_guide_step04_desktop_and_cli_restore_verified": true,
+      "narrow_320x568_language_pill_nowrap_single_line_verified": true,
+      "original_two_preference_keys_restored": true,
+      "qa_screenshot_pixels_inspected": true
+    },
+    "cleanup": {
+      "ego_space_finished": true,
+      "owned_synthetic_exe_stopped": true
+    }
+  },
+  "not_established": [
+    "The cause of the original Alpha.5 first-navigation observation",
+    "New native Windows file-picker restore acceptance (remains dated Alpha.4 scope) or a second clean Windows computer",
+    "Real Gmail automatic new-message arrival (TLS EOF/reset unresolved), paid Proton Bridge, physical mobile or low-end hardware",
+    "Screen-reader output, external security certification, physical power loss or cross-file credential crash atomicity",
+    "Owner visual approval, external user pilot, retention, payment or product-market fit"
+  ],
+  "local_packaging": {
+    "source_files_checked": 163,
+    "source_filename": "MailCairn-0.1.0-alpha.9-source.zip",
+    "windows_filename": "MailCairn-0.1.0-alpha.9-windows-x64.zip",
+    "windows_files": 984,
+    "windows_bytes": 13063389,
+    "windows_sha256": "988e0bcbeceeffd9aa6af6ee107e7c2b42edd8a8d8997ae1e3b65268ea83e8c1",
+    "windows_crc_and_member_bytes_verified": true,
+    "privacy_scope": "Finite path/credential/machine-marker checks and separate screenshot pixel inspection; not comprehensive privacy or security certification."
+  },
+  "artifacts": "Consult ALPHA9-ARTIFACTS.json and .sha256 beside the final local packages. Older Alpha.5–Alpha.8 packages are preserved historical candidates."
+}

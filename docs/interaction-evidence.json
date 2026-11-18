@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-09",
+  "frontend_checks": 40,
+  "i18n_checks": 15,
+  "http_tests": 21,
+  "first_import": {
+    "before": {
+      "empty": true,
+      "count": "0",
+      "decorativeEntries": false,
+      "nativeSelects": 0
+    },
+    "imported": {
+      "empty": false,
+      "count": "1",
+      "rows": 1,
+      "phase": "review",
+      "outcome": "message-1.eml导入已完成 · 新增 1 · 重复 0 · 未导入 0查看回执 ↗浏览邮件"
+    },
+    "after": {
+      "dialogOpen": false,
+      "body": "All mail\r\nImport history\r\nThis exact UI-like text is private message content and must stay unchanged.\r\n",
+      "rows": 1
+    }
+  },
+  "duplicates": {
+    "count": "1",
+    "rows": 1,
+    "outcomes": "message-1.eml导入已完成 · 新增 0 · 重复 1 · 未导入 0查看回执 ↗浏览邮件",
+    "phase": "review"
+  },
+  "errors_and_history": {
+    "rejected": {
+      "count": "1",
+      "ctaHidden": true,
+      "error": "not-mail.zip请选择解压后的 MBOX 或 EML 文件。不支持 ZIP、PST 等其他格式。"
+    },
+    "mixed": {
+      "count": "6",
+      "rows": 6,
+      "summary": "5 added · 1 duplicates · 0 records not imported · 1 files need review",
+      "outcome": "broken.mboxImport failed · 0 added · 0 duplicates · 0 not importedNo standard MBOX envelope found. Unzip your export first. PST, ZIP and mboxcl files are not supported; individual messages must use .eml.View receipt ↗Browse mailTakeout-shape.mboxImport complete · 5 added · 1 duplicates · 0 not importedView receipt ↗Browse mail"
+    },
+    "history": {
+      "cards": 4,
+      "heading": "Import history"
+    }
+  },
+  "layout_and_motion": {
+    "reports": [
+      {
+        "label": "reader-en-1440",
+        "width": 1440,
+        "lang": "en",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "label": "history-en-1440",
+        "width": 1440,
+        "lang": "en",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "label": "preferences-zh-dark-1440",
+        "width": 1440,
+        "lang": "zh-CN",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "label": "reader-zh-dark",
+        "width": 1440,
+        "lang": "zh-CN",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "label": "reader-zh-dark-390",
+        "width": 390,
+        "lang": "zh-CN",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "label": "preferences-zh-dark-320",
+        "width": 320,
+        "lang": "zh-CN",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "label": "import-choose-zh-320",
+        "width": 320,
+        "lang": "zh-CN",
+        "overflow": false,
+        "violations": []
+      }
+    ],
+    "nav": {
+      "view": false,
+      "animation": true
+    },
+    "reader": {
+      "opening": true,
+      "flight": true,
+      "textAvailable": true,
+      "animations": [
+        "page-crease",
+        "reader-ink-settle",
+        "reader-ink-settle",
+        "reader-ink-settle",
+        "sheet-turn"
+      ]
+    },
+    "rapid": {
+      "selected": "4",
+      "residualFlights": 0
+    },
+    "pointer": {
+      "outline": "none",
+      "shadow": "rgb(177, 195, 153) 0px -2px 0px 0px inset"
+    },
+    "keyboard": {
+      "tag": "INPUT",
+      "type": "radio",
+      "focusVisible": true,
+      "outline": "none",
+      "nextOutline": "none",
+      "nextShadow": "rgb(177, 195, 153) 0px -2px 0px 0px inset"
+    },
+    "reduced": {
+      "flight": false,
+      "readerOpening": false,
+      "content": true
+    }
+  },
+  "packaged_smoke": {
+    "packaged": true,
+    "count": "6",
+    "rows": 6,
+    "empty": false,
+    "languageButtons": 2,
+    "removedDemos": true,
+    "bodyReady": true
+  },
+  "data": "Synthetic only; no real mailbox contents",
+  "acceptance": "User subjective acceptance pending; no GitHub upload"
+}

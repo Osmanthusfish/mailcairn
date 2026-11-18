@@ -1,0 +1,72 @@
+{
+  "version": "0.1.0-alpha.8",
+  "date": "2026-11-17",
+  "status": "internal_candidate_not_published_or_owner_accepted",
+  "exe_sha256": "9a11ab42700477f9d0f30481988b2802ec40a345fea2865ca3d64ceca7b8efba",
+  "synthetic_data_only": true,
+  "implemented": [
+    "Failed message reads offer an in-place bilingual retry action (.retry-reader) that preserves keyboard focus during repeated failures and transfers focus to #reader upon recovery without stealing focus if the user moved elsewhere",
+    "Failed import receipt loads offer an in-place bilingual retry action (.retry-receipt) inside the receipt modal that keeps keyboard focus during repeated failures and moves focus to receipt actions upon recovery without stealing moved focus",
+    "Opening Reading room focuses the currently active theme radio option rather than always resetting initial focus to System",
+    "Modal focus wrapping (keepDialogFocus) includes <summary> elements, excludes controls inside collapsed <details>, and handles Tab / Shift+Tab when focus rests on the <dialog> root",
+    "Includes Alpha.7 modal Tab wrap and singular/plural grammar, Alpha.6 startup recovery, Alpha.5 reader preservation and MBOX export compatibility, and earlier polling/credential/startup fixes"
+  ],
+  "checks": {
+    "python_full": {
+      "passed": 202,
+      "skipped": 0,
+      "seconds": 27.828,
+      "runtime_warnings_as_errors": true,
+      "scope": "Python backend, store, parse, sync, CLI, desktop, HTTP and release boundary checks (no Python logic changes between Alpha.7 and Alpha.8 except version bump)"
+    },
+    "frontend": {"passed": 65},
+    "connections": {"passed": 31},
+    "bilingual": {"passed": 18},
+    "startup": {"passed": 11},
+    "bundle_audit": {
+      "passed": true,
+      "native_components": 21,
+      "application_modules": 10,
+      "static_assets": 10,
+      "desktop_notices": 21,
+      "project_notices": 3,
+      "manifest_hashes": 19
+    },
+    "actual_exe_http": {
+      "passed_groups": 8,
+      "restore_mode": "extracted_source_helper_http"
+    },
+    "ego_browser_actual_exe": {
+      "ui_import_sample_mbox_20_messages": true,
+      "preferences_reopen_focuses_active_dark_theme": true,
+      "connect_dialog_details_collapsed_summary_and_open_port_focus": true,
+      "connect_dialog_tab_and_shift_tab_wrap_verified": true,
+      "reader_failure_bilingual_retry_and_enter_recovery_verified": true,
+      "receipt_failure_bilingual_retry_and_enter_recovery_verified": true,
+      "original_two_preference_keys_restored": true,
+      "screenshot_pixels_inspected": true
+    },
+    "cleanup": {
+      "ego_space_finished": true,
+      "owned_synthetic_exe_stopped": true
+    }
+  },
+  "not_established": [
+    "The cause of the original Alpha.5 first-navigation observation",
+    "New native Windows file-picker restore acceptance (remains dated Alpha.4 scope) or a second clean Windows computer",
+    "Real Gmail automatic new-message arrival (TLS EOF/reset unresolved), paid Proton Bridge, physical mobile or low-end hardware",
+    "Screen-reader output, external security certification, physical power loss or cross-file credential crash atomicity",
+    "Owner visual approval, external user pilot, retention, payment or product-market fit"
+  ],
+  "local_packaging": {
+    "source_files_checked": 181,
+    "source_filename": "MailCairn-0.1.0-alpha.8-source.zip",
+    "windows_filename": "MailCairn-0.1.0-alpha.8-windows-x64.zip",
+    "windows_files": 984,
+    "windows_bytes": 13062102,
+    "windows_sha256": "73ae27f841feb17f4ccf3fe459976e68ebcf8416fc45923ef752e40035d6bcaf",
+    "windows_crc_and_member_bytes_verified": true,
+    "privacy_scope": "Finite path/credential/machine-marker checks and separate screenshot pixel inspection; not comprehensive privacy or security certification."
+  },
+  "artifacts": "Consult ALPHA8-ARTIFACTS.json and .sha256 beside the final local packages. Older Alpha.5, Alpha.6 and Alpha.7 packages are preserved historical candidates."
+}

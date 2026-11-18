@@ -1,0 +1,36 @@
+From: Harbor Rail <tickets@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: Your autumn journey =?utf-8?b?4oCU?= booking confirmed
+Message-ID: <mailcairn-synthetic-001@example.com>
+Date: Mon, 09 Nov 2026 09:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="mixed-fixture-boundary"
+
+--mixed-fixture-boundary
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Alex,
+
+Your seat is reserved for the Saturday morning train to the coast.
+
+Departure: 14 November, 09:24
+Arrival: 11:02
+Booking reference: LANTERN-421
+Seat: Coach 4, seat 18A
+
+Please bring the attached booking note. Have a lovely weekend.
+
+Harbor Rail
+
+--mixed-fixture-boundary
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="train-booking.txt"
+MIME-Version: 1.0
+
+U1lOVEhFVElDIFRJQ0tFVApMQU5URVJOLTQyMQoxNCBOb3ZlbWJlciAyMDI2IDA5OjI0CkNvYWNo
+IDQgU2VhdCAxOEEK
+
+--mixed-fixture-boundary--

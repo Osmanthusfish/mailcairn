@@ -1,0 +1,480 @@
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: Harbor Rail <tickets@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: Your autumn journey =?utf-8?b?4oCU?= booking confirmed
+Message-ID: <mailcairn-synthetic-001@example.com>
+Date: Mon, 09 Nov 2026 09:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="mixed-fixture-boundary"
+
+--mixed-fixture-boundary
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Alex,
+
+Your seat is reserved for the Saturday morning train to the coast.
+
+Departure: 14 November, 09:24
+Arrival: 11:02
+Booking reference: LANTERN-421
+Seat: Coach 4, seat 18A
+
+Please bring the attached booking note. Have a lovely weekend.
+
+Harbor Rail
+
+--mixed-fixture-boundary
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="train-booking.txt"
+MIME-Version: 1.0
+
+U1lOVEhFVElDIFRJQ0tFVApMQU5URVJOLTQyMQoxNCBOb3ZlbWJlciAyMDI2IDA5OjI0CkNvYWNo
+IDQgU2VhdCAxOEEK
+
+--mixed-fixture-boundary--
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: Mia Chen <mia@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: A slow Sunday lunch?
+Message-ID: <mailcairn-synthetic-002@example.com>
+Date: Sun, 08 Nov 2026 22:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hi Alex,
+
+Let's have lunch at home this Sunday. I'll bring the bread and olives. Could =
+you make that roasted tomato soup again?
+
+No rush =E2=80=94 around one is perfect.
+
+Mia
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: Northfield Workshop <care@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: Your coffee machine warranty is ready
+Message-ID: <mailcairn-synthetic-003@example.com>
+Date: Sun, 08 Nov 2026 11:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="mixed-fixture-boundary"
+
+--mixed-fixture-boundary
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Alex,
+
+Thank you for choosing the Northfield Mini. Your warranty runs until 8 Novemb=
+er 2028.
+
+Serial: NF-MINI-2048
+Order: ORDER-731
+
+Keep this email and the attached warranty note with your purchase receipt.
+
+The Northfield team
+
+--mixed-fixture-boundary
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="warranty-NF-MINI.txt"
+MIME-Version: 1.0
+
+U1lOVEhFVElDIFdBUlJBTlRZCk5vcnRoZmllbGQgTWluaQpTZXJpYWwgTkYtTUlOSS0yMDQ4CkV4
+cGlyZXMgMjAyOC0xMS0wOAo=
+
+--mixed-fixture-boundary--
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: =?utf-8?b?5p6X5pmT?= <lin@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: =?utf-8?b?5ZGo5pyr55qE5a625bqt55u45YaM?=
+Message-ID: <mailcairn-synthetic-004@example.com>
+Date: Sun, 08 Nov 2026 00:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+
+QWxleO+8jAoK5oqK5LiK5ZGo5LiA6LW35pWj5q2l5ouN55qE54Wn54mH5pW055CG5aW95LqG44CC
+5bCP5pyL5Y+L5Zyo6JC95Y+25aCG6YeM56yR5b6X54m55Yir5byA5b+D44CCCgrkuIvmrKHop4Hp
+naLluKbkuIrnm7jmnLrvvIzmiJHku6zljrvmsrPovrnotbDotbDjgIIKCuaZkwo=
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: Cedar House <stay@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: Your stay at Cedar House
+Message-ID: <mailcairn-synthetic-005@example.com>
+Date: Sat, 07 Nov 2026 13:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="mixed-fixture-boundary"
+
+--mixed-fixture-boundary
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Alex,
+
+We look forward to welcoming you on 14 November. Check-in is from 15:00, and =
+the little reading room is open all afternoon.
+
+Room: The Willow Room
+Reservation: CEDAR-118
+
+Let us know if you need a late arrival.
+
+Sam at Cedar House
+
+--mixed-fixture-boundary
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="reservation-CEDAR-118.txt"
+MIME-Version: 1.0
+
+U1lOVEhFVElDIFJFU0VSVkFUSU9OCkNlZGFyIEhvdXNlIC8gV2lsbG93IFJvb20KQXJyaXZhbCAy
+MDI2LTExLTE0CkRlcGFydHVyZSAyMDI2LTExLTE2Cg==
+
+--mixed-fixture-boundary--
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: Harbor Library <library@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: Your reserved book is waiting
+Message-ID: <mailcairn-synthetic-006@example.com>
+Date: Sat, 07 Nov 2026 02:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hello Alex,
+
+The book you reserved, A Field Guide to Small Gardens, is ready to collect. W=
+e will hold it until 12 November.
+
+See you soon,
+Harbor Library
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: Westbound Cycles <service@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: Bicycle service receipt
+Message-ID: <mailcairn-synthetic-007@example.com>
+Date: Fri, 06 Nov 2026 15:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="mixed-fixture-boundary"
+
+--mixed-fixture-boundary
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Alex,
+
+Your bicycle is ready. We adjusted the brakes, cleaned the drivetrain and rep=
+laced the rear cable.
+
+Service total: 42.00
+Reference: BIKE-104
+
+Enjoy the ride,
+Leah
+
+--mixed-fixture-boundary
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="bicycle-service.txt"
+MIME-Version: 1.0
+
+U1lOVEhFVElDIFJFQ0VJUFQKQnJha2UgYWRqdXN0bWVudCAxOC4wMApDYWJsZSByZXBsYWNlbWVu
+dCAyNC4wMApUb3RhbCA0Mi4wMAo=
+
+--mixed-fixture-boundary--
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: Mum <family@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: The recipe you asked for
+Message-ID: <mailcairn-synthetic-008@example.com>
+Date: Fri, 06 Nov 2026 04:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hi love,
+
+Here is the apple cake recipe: three apples, two eggs, 150 g flour, 100 g but=
+ter and a little cinnamon. Bake at 180 C until golden.
+
+It is even better the next morning.
+
+Mum
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: Lakeside Pottery <studio@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: Saturday workshop details
+Message-ID: <mailcairn-synthetic-009@example.com>
+Date: Thu, 05 Nov 2026 17:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hello Alex,
+
+Your place at our hand-building workshop is confirmed for 21 November at 10:0=
+0. Aprons and clay are included; bring an old towel if you have one.
+
+We will start with a small breakfast bowl.
+
+Lakeside Pottery
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: City Water <billing@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: October water statement
+Message-ID: <mailcairn-synthetic-010@example.com>
+Date: Thu, 05 Nov 2026 06:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="mixed-fixture-boundary"
+
+--mixed-fixture-boundary
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Alex,
+
+Your October statement is attached for your records. The balance has been pai=
+d.
+
+Statement reference: WATER-2026-10
+
+Customer care
+
+--mixed-fixture-boundary
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="water-october.txt"
+MIME-Version: 1.0
+
+U1lOVEhFVElDIFNUQVRFTUVOVApPY3RvYmVyIDIwMjYKVXNhZ2UgOCBjdWJpYyBtZXRlcnMKUGFp
+ZCAyNC44MAo=
+
+--mixed-fixture-boundary--
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: Nora Patel <nora@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: Walking route for next weekend
+Message-ID: <mailcairn-synthetic-011@example.com>
+Date: Wed, 04 Nov 2026 19:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hi Alex,
+
+The riverside path is open again. Let's start at the old bridge and walk towa=
+rd the orchard. It's about six kilometres, with a cafe halfway.
+
+I'll bring a thermos.
+
+Nora
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: Paper & Pine <orders@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: Your notebook order has shipped
+Message-ID: <mailcairn-synthetic-012@example.com>
+Date: Wed, 04 Nov 2026 08:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hello Alex,
+
+Your two linen notebooks are on their way. We included the refill guide in th=
+e package.
+
+Order: PP-820
+
+Thank you for supporting our little shop.
+
+Paper & Pine
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: Lin Xiao <lin@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: =?utf-8?b?5L+d5L+u5Y+R56Wo5bey5pW055CG?=
+Message-ID: <mailcairn-synthetic-013@example.com>
+Date: Tue, 03 Nov 2026 21:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="mixed-fixture-boundary"
+
+--mixed-fixture-boundary
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+QWxleO+8jA0KDQrlkpbllaHmnLrnmoTotK3kubDlj5Hnpajlkozkv53kv67or7TmmI7lt7Lnu4/m
+lL7lnKjpmYTku7bph4zjgILnlLPor7fnu7Tkv67ml7bvvIzpnIDopoHmj5DkvpvmnLrlmajluo/l
+iJflj7flkozotK3kubDml6XmnJ/jgIINCg0K6L+Z5piv5LiA5Lu95ZCI5oiQ5rWL6K+V6YKu5Lu2
+77yM5LiN5YyF5ZCr55yf5a6e6K6i5Y2V44CCDQoNCuaZkw0K
+
+--mixed-fixture-boundary
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+ filename*=utf-8''%E4%BF%9D%E4%BF%AE%E5%8F%91%E7%A5%A8.txt
+MIME-Version: 1.0
+
+5ZCI5oiQ5rWL6K+V5Y+R56WoCuWSluWVoeacuiBORi1NSU5JLTIwNDgK6LSt5Lmw5pel5pyf77ya
+MjAyNi0xMC0xOAo=
+
+--mixed-fixture-boundary--
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: Garden Club <garden@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: Autumn seed swap
+Message-ID: <mailcairn-synthetic-014@example.com>
+Date: Tue, 03 Nov 2026 10:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Dear neighbours,
+
+Bring spare seeds to the community garden on 7 November. Envelopes, labels an=
+d tea will be provided. Beginners are very welcome.
+
+The garden volunteers
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: Coastline Ferry <ferry@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: Your ferry reservation
+Message-ID: <mailcairn-synthetic-015@example.com>
+Date: Mon, 02 Nov 2026 23:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="mixed-fixture-boundary"
+
+--mixed-fixture-boundary
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Alex,
+
+Your crossing is booked for 15 November at 10:30. Please arrive twenty minute=
+s before departure.
+
+Reservation: FERRY-612
+Passengers: 2 adults
+
+Safe travels.
+
+--mixed-fixture-boundary
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="ferry-note.txt"
+MIME-Version: 1.0
+
+U1lOVEhFVElDIEZFUlJZIEJPT0tJTkcKRkVSUlktNjEyCjE1IE5vdmVtYmVyIDIwMjYgLyAxMDoz
+MAo=
+
+--mixed-fixture-boundary--
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: Mia Chen <mia@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: That little bookshop
+Message-ID: <mailcairn-synthetic-016@example.com>
+Date: Mon, 02 Nov 2026 12:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hi Alex,
+
+I found the bookshop we talked about. They have a whole shelf of nature writi=
+ng and a very sleepy cat. Let's stop by when we are in the neighbourhood.
+
+Mia
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: Atelier Frames <frames@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: Your print is ready to collect
+Message-ID: <mailcairn-synthetic-017@example.com>
+Date: Mon, 02 Nov 2026 01:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hello Alex,
+
+The oak frame for your landscape print is finished. We are open until six on =
+weekdays and four on Saturdays.
+
+Order: FRAME-930
+
+Thank you,
+Atelier Frames
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: Community Hall <events@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: November film evening
+Message-ID: <mailcairn-synthetic-018@example.com>
+Date: Sun, 01 Nov 2026 14:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hello everyone,
+
+Our next film evening is on 20 November. Doors open at 18:30. Bring a cushion=
+ if you like; refreshments are by donation.
+
+See you there,
+The hall team
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: Northfield Workshop <care@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: A quick care guide for your coffee machine
+Message-ID: <mailcairn-synthetic-019@example.com>
+Date: Sun, 01 Nov 2026 03:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hi Alex,
+
+A few simple habits will keep your machine happy: rinse the basket after each=
+ use, empty the drip tray daily, and descale when the indicator appears.
+
+Enjoy your morning coffee.
+
+Northfield Workshop
+From archive@example.com Mon Nov 09 09:00:00 2026
+From: Alex Morgan <alex@example.com>
+To: Alex Morgan <alex@example.com>
+Subject: Notes for a quieter November
+Message-ID: <mailcairn-synthetic-020@example.com>
+Date: Sat, 31 Oct 2026 16:42:00 +0800
+X-Gmail-Labels: Archive,Personal
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Remember:
+
+Keep one weekend free.
+Finish the library book.
+Take the coastal train.
+Make apple cake.
+
+Small plans are enough.

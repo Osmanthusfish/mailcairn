@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-16",
+  "status": "verified_internal_candidate_not_published",
+  "internal_version": "0.1.0-alpha.4",
+  "exe_sha256": "88791ba28fce389f4b4f1cc4364108b07ef86da725516d97eaf6ace16f05978d",
+  "bundle_reconciliation": {"passed": true, "native_components": 21, "application_modules": 10, "static_resources": 9, "desktop_notices": 21, "project_notices": 3, "license_hashes": 19},
+  "actual_exe_http_smoke": {"groups_passed": 8, "data": "synthetic", "restore_mode": "extracted_source_helper_http", "native_restore_tested": false},
+  "regression": {
+    "python_total": 200,
+    "python_passed": 200,
+    "python_skipped": 0,
+    "python_seconds": 25.097,
+    "runtime_warnings_promoted_to_errors": true,
+    "frontend_dom_passed": 59,
+    "connections_dom_passed": 31,
+    "bilingual_dom_passed": 16,
+    "credential_sync_http_desktop_targeted_passed": 57
+  },
+  "real_browser": {
+    "data": "Synthetic manager and mail, real loopback HTTP and browser",
+    "initial_discovery_failed": true,
+    "initial_retry_scheduled": true,
+    "automatic_discovery_recovered": true,
+    "archive_count_before": 0,
+    "archive_count_after": 1,
+    "archive_rows_after": 1,
+    "manual_sync_or_poll_triggered": false,
+    "delayed_import_search_focus": "filter-toggle",
+    "rollback_warning_verified_english_chinese": true,
+    "warning_viewport_width": 390,
+    "warning_document_width": 375,
+    "warning_has_reconnect_action": true,
+    "scope": "Recovery fixture first used a counter name conflicting with the fake manager call log; it was corrected and rerun in the same browser task. This is not live IMAP, a physical phone or a screen-reader test. Browser task and isolated services were closed afterward."
+  },
+  "desktop_widget_checks": {
+    "passed": 4,
+    "real_tk_widgets_and_workers": true,
+    "file_picker_replaced_by_test": true,
+    "native_dialog_completed": false,
+    "cases": ["Restore copy preserves original", "Cancelled selection", "Corrupt backup keeps original service", "Busy service blocks restore"],
+    "cleanup": "Owned test workers joined; widget/mock references cleared and Tcl cycles collected on the creating thread. Earlier full-suite Tcl warning was not observed on the rerun."
+  },
+  "native_desktop_acceptance": {
+    "build": "Same actual EXE identified above, normal Windows user session",
+    "data": "One synthetic sample.eml, empty original archive, no accounts",
+    "native_backup_and_destination_pickers_completed": true,
+    "restored_to_new_folder_and_ready": true,
+    "opened_original_archive_and_ready": true,
+    "reopened_restored_archive_and_ready": true,
+    "cancel_restore_kept_current_archive": true,
+    "closed_via_desktop_button": true,
+    "original_message_count": 0,
+    "backup_message_count": 1,
+    "restored_message_count": 1,
+    "backup_and_restored_sqlite_integrity": "ok",
+    "restored_original_bytes_equal_fixture": true,
+    "restored_hashes_equal_backup": true,
+    "stored_hashes_match_raw": true,
+    "restored_fts_rows": 1,
+    "scope": "Native controls and Windows pickers exercised with real clicks. Post-close read-only database checks verified data. The sandbox desktop was initially inaccessible; normal-user launch resolved targetability. An automation path-entry error was corrected by selecting existing folders. No second-machine, physical-power-loss, live-mail or browser-directory-import claim follows. Native screenshots with personal Explorer sidebar content were excluded from public source."
+  },
+  "credential_failure_checks": {
+    "prior_remembered_and_session_modes_restored": true,
+    "opaque_old_secret_restored_without_decryption": true,
+    "credential_write_failure_preserves_prior_state": true,
+    "rollback_failure_requires_explicit_reconnect_in_session": true,
+    "new_account_cleanup_failure_is_disclosed": true,
+    "scope": "Synthetic passwords only; protected-file behavior and public state asserted. No cross-file crash atomicity, persistent reconnect latch or orphan cleanup is claimed."
+  },
+  "forced_process_termination": {
+    "passed": true,
+    "evidence": "crash-recovery-20261116-evidence.json",
+    "committed_preserved": 100,
+    "uncommitted_rolled_back": 24,
+    "receipt_recovered_as_interrupted": true,
+    "reimport_added": 150,
+    "reimport_duplicates": 100,
+    "final_messages": 250,
+    "raw_hashes_index_receipts_valid": true,
+    "scope": "Source Store API, production batch thresholds, only owned subprocess killed. Not actual EXE termination, physical power loss or cross-file credential durability."
+  },
+  "not_verified": ["Second clean Windows machine (owner currently has none available)", "Gmail automatic new arrival after initial archive", "Paid Proton Bridge", "Low-end hardware", "Screen-reader output", "Owner visual acceptance"]
+}

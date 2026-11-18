@@ -1,0 +1,57 @@
+{
+  "version": "0.1.0-alpha.6",
+  "date": "2026-11-16",
+  "status": "internal_candidate_not_published_or_owner_accepted",
+  "exe_sha256": "59ce87b4b7fe458ab14327e52817f23a391f2427b3187aeba745effbe2e3f332",
+  "synthetic_data_only": true,
+  "implemented": [
+    "Independent local startup recovery installs before business scripts and queues early failures until the DOM is ready",
+    "Missing business resources, parse/top-level exceptions and early binding errors expose a bilingual keyboard-usable reload action",
+    "12-second slow-startup message allows late success; definitive failures cancel the slow timer",
+    "Reload preserves the current URL and unexchanged session fragment; successful session exchange retains existing URL cleanup",
+    "Ready/handled startup clears its timer and listeners, restores only owned disabled states, and moves focus only if the hidden recovery panel held it",
+    "No telemetry, dependency, inline-handler or unsafe-inline CSP addition"
+  ],
+  "checks": {
+    "python_full": {"passed": 202, "skipped": 0, "seconds": 38.168, "runtime_warnings_as_errors": true, "scope": "After startup changes, before the release-version metadata bump"},
+    "http_targeted": {"passed": 22},
+    "frontend": {"passed": 61},
+    "connections": {"passed": 31},
+    "bilingual": {"passed": 16},
+    "startup": {"passed": 11},
+    "bundle_audit": {"passed": true, "native_components": 21, "application_modules": 10, "static_assets": 10, "desktop_notices": 21, "project_notices": 3, "license_hashes": 19},
+    "actual_exe_http": {"passed_groups": 8, "restore_mode": "extracted_source_helper_http"},
+    "ego_browser_source_fixture": {
+      "missing_app_script": true,
+      "missing_translation_script": true,
+      "app_syntax_error": true,
+      "app_top_level_exception": true,
+      "early_binding_exception": true,
+      "english_and_chinese_recovery": true,
+      "keyboard_enter_reload_recovers_and_cleans_exchanged_fragment": true,
+      "slow_startup_then_late_success_restores_buttons_and_focus": true,
+      "fixture_correction": "The first slow-response injection delayed before cancelling the header timer and was closed at 10s. After correcting that fixture, the same Ego space passed the intended delayed-response test."
+    },
+    "ego_browser_actual_exe": {
+      "normal_startup_hidden_fallback_and_two_real_synthetic_messages": true,
+      "own_page_app_script_temporarily_blocked_through_cdp": true,
+      "immediate_failure_panel_with_unexchanged_fragment_intact": true,
+      "blocked_urls_cleared_before_keyboard_reload": true,
+      "keyboard_reload_restored_two_messages_and_enabled_import": true,
+      "session_fragment_removed_after_exchange": true,
+      "system_network_or_proxy_changes": false,
+      "recovery_screenshot_pixels_inspected": true
+    },
+    "cleanup": {"ego_space_finished": true, "owned_source_fixture_stopped": true, "path_verified_synthetic_exe_stopped": true}
+  },
+  "not_established": [
+    "The cause of the original Alpha.5 first-navigation observation; static byte checks passed and no historical saturation evidence was available",
+    "Recovery JavaScript when startup.js itself cannot load; noscript covers disabled JavaScript, not a failed bootstrap download",
+    "New native Windows file-picker restore acceptance or a second clean Windows computer",
+    "Real Gmail automatic new-message arrival, paid Proton Bridge, physical mobile or low-end hardware",
+    "Screen-reader output, external security certification, physical power loss or cross-file credential crash atomicity",
+    "Owner visual approval, external user pilot, retention, payment or product-market fit"
+  ],
+  "local_packaging": {"source_files_checked": 177, "source_filename": "MailCairn-0.1.0-alpha.6-source.zip", "windows_filename": "MailCairn-0.1.0-alpha.6-windows-x64.zip", "windows_files": 984, "windows_bytes": 13060069, "windows_sha256": "89176417896c5f9690930cc326bf289e7211eb58d7b01fbbd442aea3c0b6ec33", "windows_crc_and_member_bytes_verified": true, "privacy_scope": "Finite path/credential/machine-marker checks and separate screenshot pixel inspection; not comprehensive privacy or security certification."},
+  "artifacts": "Consult ALPHA6-ARTIFACTS.json and .sha256 beside the final local packages. Older Alpha.5 packages are preserved historical candidates."
+}

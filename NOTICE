@@ -1,0 +1,34 @@
+Required Notice: Copyright (c) 2026 the original MailCairn publisher. All rights reserved except as expressly licensed.
+
+MailCairn is licensed under the PolyForm Noncommercial License 1.0.0.
+See LICENSE for the complete, unmodified license terms.
+
+The licensor is the individual or entity offering this software under those
+terms, identified by the original publishing repository
+(contact: yuyuio123@protonmail.com).
+
+The MailCairn license does not change the licenses of Python, SQLite, the
+browser, or other components. The source distribution contains no Python/SQLite
+runtime binaries and requires no third-party Python/JavaScript application
+packages. Included desktop license texts are notices, not runtime binaries.
+
+The separately packaged Windows 64-bit desktop candidate includes unmodified
+Python 3.13.17, native runtime libraries, and PyInstaller bootloader/runtime
+components. These retain their own licenses and redistribution conditions;
+they are not relicensed under PolyForm Noncommercial. Preserve the complete
+licenses/desktop directory (under _internal in the extracted desktop build),
+including its manifest, Python Windows conditions and component notices.
+See docs/desktop-dependencies.md for the versioned inventory and audit scope.
+The user's browser is not bundled.
+
+Bundled font software is separately licensed under SIL Open Font License 1.1,
+not PolyForm Noncommercial. Unmodified Hanken Grotesk and Newsreader fonts
+include their copyright and full license notices in mailcairn/static/fonts/.
+These fonts may be used commercially under their own licenses; their license
+does not grant commercial rights to the MailCairn application source.
+
+The PolyForm license text was obtained from:
+https://polyformproject.org/licenses/noncommercial/1.0.0.txt
+
+Product names mentioned in research and documentation belong to their
+respective owners. No affiliation with or endorsement by those owners is implied.

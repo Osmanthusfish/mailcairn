@@ -1,0 +1,199 @@
+{
+  "versions": {
+    "python": "3.13.17",
+    "openssl": "3.5.9",
+    "sqlite": "3.50.4",
+    "expat": "2.8.5",
+    "zlib": "1.3.1",
+    "mpdecimal": "4.0.0",
+    "tcl": "8.6.15",
+    "tk": "8.6.15",
+    "pyinstaller": "6.22.0",
+    "pyinstaller_hooks_contrib": "2026.9",
+    "xz": "5.2.5"
+  },
+  "generated_utc": "2026-11-09T10:42:39+00:00",
+  "files": [
+    {
+      "file": "Apache-2.0.txt",
+      "source": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "source_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "transformation": "none",
+      "bytes": 11358
+    },
+    {
+      "file": "Expat-COPYING.txt",
+      "source": "https://raw.githubusercontent.com/libexpat/libexpat/R_2_8_5/expat/COPYING",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+      "source_sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+      "transformation": "none",
+      "bytes": 1144
+    },
+    {
+      "file": "HACL-source-notice.txt",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.17/Modules/_hacl/Hacl_Hash_SHA2.c",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "998ce04fb8ad9dedb0bc1b44938f8c3dcf1089780fa105ce1c8c30fb5554d78c",
+      "source_sha256": "30638efb75c8b185bb09c3df6977e3f3c5d21a1e696218cf7ade6bc4d5201b31",
+      "transformation": "exact leading copyright/license comment, code omitted; full MIT text for mimalloc also in Python-incorporated-software-notices.txt",
+      "bytes": 1207
+    },
+    {
+      "file": "OpenSSL-LICENSE.txt",
+      "source": "https://raw.githubusercontent.com/openssl/openssl/openssl-3.5.9/LICENSE.txt",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a",
+      "source_sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a",
+      "transformation": "none",
+      "bytes": 10175
+    },
+    {
+      "file": "PyInstaller-COPYING.txt",
+      "source": "build-runtime/Lib/site-packages/pyinstaller-6.22.0.dist-info/licenses/COPYING.txt",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "dcf75fdb959db1e3b41c0f8505069d2ece781b5ec6b3d0a4d30975cfc6580245",
+      "source_sha256": "dcf75fdb959db1e3b41c0f8505069d2ece781b5ec6b3d0a4d30975cfc6580245",
+      "transformation": "none",
+      "bytes": 32138
+    },
+    {
+      "file": "PyInstaller-hooks-contrib-LICENSE.txt",
+      "source": "build-runtime/Lib/site-packages/pyinstaller_hooks_contrib-2026.9.dist-info/licenses/LICENSE",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "91d0baaff00773038e72c0a1fc9d5d2d38706b7a2b9c04f34296608f931b9cd0",
+      "source_sha256": "91d0baaff00773038e72c0a1fc9d5d2d38706b7a2b9c04f34296608f931b9cd0",
+      "transformation": "none",
+      "bytes": 27666
+    },
+    {
+      "file": "PyInstaller-runtime-hook-notices.txt",
+      "source": "build-runtime/Lib/site-packages/PyInstaller/hooks/rthooks",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "34af72a7fd670696f8edeb5fb0a56e3e2f260244f8e3a33eb6630703f5467e80",
+      "source_sha256": "34af72a7fd670696f8edeb5fb0a56e3e2f260244f8e3a33eb6630703f5467e80",
+      "transformation": "none",
+      "bytes": 13712
+    },
+    {
+      "file": "Python-Windows-LICENSE.txt",
+      "source": "build-runtime/LICENSE.txt",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "62bec384df47b0328307db41455ff6ea2559e5546b394ac69148561b21703120",
+      "source_sha256": "62bec384df47b0328307db41455ff6ea2559e5546b394ac69148561b21703120",
+      "transformation": "none",
+      "bytes": 33861
+    },
+    {
+      "file": "Python-build-version-provenance.txt",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.17/PCbuild/python.props",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "022e29594aa3a2cc5ebc325529eb7c520bbb1a0c3706bba504217833334a9c7b",
+      "source_sha256": "022e29594aa3a2cc5ebc325529eb7c520bbb1a0c3706bba504217833334a9c7b",
+      "transformation": "none",
+      "bytes": 18513
+    },
+    {
+      "file": "Python-incorporated-software-notices.txt",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.17/Doc/license.rst",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "952ac05720d7f1dcb63589b35eb0931b1442eb250230a4ad31198eddf0ad6abc",
+      "source_sha256": "952ac05720d7f1dcb63589b35eb0931b1442eb250230a4ad31198eddf0ad6abc",
+      "transformation": "none",
+      "bytes": 58181
+    },
+    {
+      "file": "SQLite-public-domain.txt",
+      "source": "https://raw.githubusercontent.com/sqlite/sqlite/version-3.50.4/LICENSE.md",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "a7a58d6022c090c528e3167026167b3141d682efc6a3c188b473ba59f1788fc7",
+      "source_sha256": "a7a58d6022c090c528e3167026167b3141d682efc6a3c188b473ba59f1788fc7",
+      "transformation": "none",
+      "bytes": 3864
+    },
+    {
+      "file": "Tcl-LICENSE.txt",
+      "source": "https://raw.githubusercontent.com/tcltk/tcl/core-8-6-15/license.terms",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "c0a69a2bfd757361ec7e6143973b103c90409316b49e9c88db26ad6388e79f16",
+      "source_sha256": "c0a69a2bfd757361ec7e6143973b103c90409316b49e9c88db26ad6388e79f16",
+      "transformation": "none",
+      "bytes": 2255
+    },
+    {
+      "file": "Tcl-LibTomMath-LICENSE.txt",
+      "source": "https://raw.githubusercontent.com/tcltk/tcl/core-8-6-15/libtommath/LICENSE",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "2fa64b163659f41965c9815882a8296d3d03ff546b76153e11445f9bdecf955a",
+      "source_sha256": "2fa64b163659f41965c9815882a8296d3d03ff546b76153e11445f9bdecf955a",
+      "transformation": "none",
+      "bytes": 1257
+    },
+    {
+      "file": "Tcl-regex-source-notice.txt",
+      "source": "https://raw.githubusercontent.com/tcltk/tcl/core-8-6-15/generic/regcomp.c",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "6d72f48f5f851ee6b39537d9ce4ee31e354956fb51b563f290e250bdb4304861",
+      "source_sha256": "a2f758a383c4155131a44606d9abdb85951d4587d4e13c4fb4a81848cf3db5c5",
+      "transformation": "exact leading copyright/license comment, code omitted; full MIT text for mimalloc also in Python-incorporated-software-notices.txt",
+      "bytes": 1556
+    },
+    {
+      "file": "Tk-LICENSE.txt",
+      "source": "https://raw.githubusercontent.com/tcltk/tk/core-8-6-15/license.terms",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "2cde822b93ca16ae535c954b7dfe658b4ad10df2a193628d1b358f1765e8b198",
+      "source_sha256": "2cde822b93ca16ae535c954b7dfe658b4ad10df2a193628d1b358f1765e8b198",
+      "transformation": "none",
+      "bytes": 2267
+    },
+    {
+      "file": "XZ-COPYING.txt",
+      "source": "https://raw.githubusercontent.com/tukaani-project/xz/v5.2.5/COPYING",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "bcb02973ef6e87ea73d331b3a80df7748407f17efdb784b61b47e0e610d3bb5c",
+      "source_sha256": "bcb02973ef6e87ea73d331b3a80df7748407f17efdb784b61b47e0e610d3bb5c",
+      "transformation": "none",
+      "bytes": 2775
+    },
+    {
+      "file": "mimalloc-source-notice.txt",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.17/Objects/mimalloc/alloc.c",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "5c43118a1543d62bb0c2103e69182a2c995968b75c37472bae6754bd7c295a7b",
+      "source_sha256": "3a44229c5f62b32467aa899423e751138d585387a9a894cf1b69ef16d2f261c9",
+      "transformation": "exact leading copyright/license comment, code omitted; full MIT text for mimalloc also in Python-incorporated-software-notices.txt",
+      "bytes": 408
+    },
+    {
+      "file": "mpdecimal-source-notice.txt",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.17/Modules/_decimal/libmpdec/mpdecimal.c",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "b07528d8b1dbf1e2d2741052996f0876e23342ce2d30d0effa39c5457716c25a",
+      "source_sha256": "4f89b8095e408a18deff79cfb605299e615bae747898eb105d8936064f7fb626",
+      "transformation": "exact leading copyright/license comment, code omitted; full MIT text for mimalloc also in Python-incorporated-software-notices.txt",
+      "bytes": 1359
+    },
+    {
+      "file": "zlib-LICENSE.txt",
+      "source": "https://raw.githubusercontent.com/madler/zlib/v1.3.1/LICENSE",
+      "accessed_utc": "2026-11-09T10:42:39+00:00",
+      "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+      "source_sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+      "transformation": "none",
+      "bytes": 1002
+    }
+  ],
+  "absent_optional": [
+    {
+      "file": "OpenSSL-NOTICE.txt",
+      "source": "https://raw.githubusercontent.com/openssl/openssl/openssl-3.5.9/NOTICE",
+      "status": "upstream-404-not-present",
+      "accessed_utc": "2026-11-09T10:42:39+00:00"
+    }
+  ],
+  "errors": [],
+  "clearance": "NOTICE COLLECTION ONLY; reconcile final bundle and Microsoft terms before publication"
+}

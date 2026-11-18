@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-10",
+  "version": "0.1.0-alpha.1",
+  "provider": "gmail",
+  "folder": "INBOX",
+  "status": "partial_pass_network_failure_unresolved",
+  "initial_import": {
+    "messages": 120,
+    "raw_bytes": 3304402,
+    "last_success_utc": "2026-11-10T07:25:50+00:00",
+    "ui_count": 120,
+    "empty_state_replaced": true,
+    "stored_credential_available": true
+  },
+  "integrity": {
+    "checked": 120,
+    "total": 120,
+    "sqlite": "ok",
+    "search_index": "ok",
+    "receipts": "ok",
+    "cancelled": false,
+    "verified_at": "2026-11-10T07:28:50.779215+00:00",
+    "raw_hash_mismatch_count": 0
+  },
+  "provider_snapshot": {
+    "observed_utc": "2026-11-10T07:30:24.476918+00:00",
+    "provider": "gmail",
+    "folder": "INBOX",
+    "selected_readonly": true,
+    "server_message_count": 121,
+    "server_next_uid": 124,
+    "cursor_uidvalidity_matches": true,
+    "tls_version": "TLSv1.3",
+    "saved_credential_unlock_in_separate_process": true
+  },
+  "new_mail": {
+    "user_confirmed_sent": true,
+    "server_count": 121,
+    "archive_count_at_failure": 120,
+    "manual_sync_triggered_by_agent": false,
+    "automatic_arrival_verified": false
+  },
+  "network": {
+    "failure_before_authentication": true,
+    "exceptions": [
+      "SSLEOFError",
+      "ConnectionResetError"
+    ],
+    "runtime_probes": [
+      "Python 3.13.17 / OpenSSL 3.5.9",
+      "Python 3.13.1 / OpenSSL 3.0.15"
+    ],
+    "mail_google_com_443_tls": "passed_TLSv1.3",
+    "imap_gmail_com_993_tls": "failed_unexpected_EOF",
+    "user_reports_proxy_unchanged": true,
+    "cause": "Unresolved; requires an alternate route comparison. No claim that proxy was disabled or that Gmail account credentials failed.",
+    "explicit_local_proxy_tests": [
+      {
+        "mode": "HTTP_CONNECT",
+        "proxy": "loopback:redacted-port",
+        "destination": "imap.gmail.com:993",
+        "http_status": 200,
+        "success": false,
+        "phase": "verified_tls",
+        "error_type": "SSLEOFError",
+        "ssl_reason": "UNEXPECTED_EOF_WHILE_READING",
+        "errno": 8,
+        "seconds": 5.07
+      },
+      {
+        "mode": "SOCKS5",
+        "proxy": "loopback:redacted-port",
+        "destination": "imap.gmail.com:993",
+        "socks_no_auth_accepted": true,
+        "socks_status": 0,
+        "success": false,
+        "phase": "verified_tls",
+        "error_type": "SSLEOFError",
+        "ssl_reason": "UNEXPECTED_EOF_WHILE_READING",
+        "errno": 8,
+        "seconds": 5.01
+      }
+    ],
+    "user_configuration": {
+      "mode": "rules",
+      "system_proxy": false,
+      "tun": true,
+      "local_port": "redacted",
+      "mtu": 9000,
+      "ipv6": false
+    },
+    "unrelated_vpn_adapter": "User corrected earlier reply: installed, NOT connected. Adapter presence/vendor warning does not prove causation.",
+    "virtual_destination_route": "local TUN proxy interface",
+    "route_rule_diagnosis": "Current app log had no matching IMAP target records; user could not locate rule-hit view. No rule or exit-policy finding established.",
+    "user_constraints": "Do not disconnect proxies/VPNs, switch nodes, change modes, adapters, MTU, rules, or global network settings; other tasks are running.",
+    "settings_modified_by_agent": false
+  },
+  "additional_checks": {
+    "sync_unit_tests_passed": 22,
+    "synthetic_scheduled_recovery_after_SSL_EOF": "passed",
+    "real_app_restart": "not_performed",
+    "credential_revocation": "not_performed"
+  },
+  "privacy": {
+    "mail_bodies_saved_in_public_material": false,
+    "account_address_or_credentials_in_evidence": false,
+    "real_mail_screenshots_published": false
+  },
+  "published": false,
+  "remaining": "Real automatic Gmail arrival and recovery unresolved. Further route diagnosis needs a rule-hit record or a later user-authorized comparison; do not repeatedly probe or ask for passwords."
+}

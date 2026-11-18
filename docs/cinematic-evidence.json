@@ -1,0 +1,51 @@
+{
+  "status": "Stronger effects implemented; owner acceptance pending",
+  "node_checks": 18,
+  "source_sha256": {
+    "mailcairn/static/app.js": "919065ee345b4669ade3b9924a838ba4c6ad73185d6eb0d1d9a2ca144a1378ff",
+    "mailcairn/static/index.html": "5fba48581bfdc67495e279f7726c8fa08c72b09aef88a9f3a1311ede078564ea",
+    "mailcairn/static/style.css": "6c55515b0b8a6b1cde2499802e111b5bdaf10c1c1bbbf31915902518137734c1",
+    "scripts/check_frontend.mjs": "66165261a18637423048876735223687f92c9eeb8770faa0bc9372db6b77f22f"
+  },
+  "browser_first": {
+    "audit": [],
+    "stopped": {
+      "runs": 0,
+      "note": "The room is still. Replay the light whenever you like."
+    },
+    "reduced": {
+      "runs": 0,
+      "disabled": true
+    },
+    "narrow": {
+      "width": 390,
+      "scrollWidth": 390,
+      "dialogWidth": 356,
+      "canvasPixels": 151117
+    }
+  },
+  "browser_final": {
+    "audit": [],
+    "searchAfterScene": "1 message",
+    "remainingEffects": 0
+  },
+  "browser_performance": {
+    "command": {
+      "scene": true,
+      "commands": false,
+      "active": 1
+    },
+    "active": {
+      "pixels": 1497852,
+      "width": 1809,
+      "height": 828,
+      "runs": 1
+    },
+    "perf": {
+      "draws": 26,
+      "durationMs": 8957.899999999907,
+      "longTasks": [],
+      "active": 0
+    }
+  }
+}

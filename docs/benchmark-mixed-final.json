@@ -1,0 +1,504 @@
+{
+  "status": "passed",
+  "failures": [],
+  "measured_at": "2026-11-10T08:36:13.027414+00:00",
+  "app_version": "0.1.0-alpha.3",
+  "source_sha256": {
+    "mailcairn/store.py": "f85f77dbd8662083b0863f3c80e0ab9567dfd006f482707c2542f24e0d1a1dab",
+    "mailcairn/parse.py": "a46439316b90ab1671ddde6bcf5970b7d478f8a3137a50bb352a68c190b66a3c",
+    "mailcairn/__init__.py": "1c7cc93521c235256e0faa9a521ef7484dfcf9afa4ff36094a885d7d86d94b24"
+  },
+  "benchmark_sha256": "9127df4aa277c7feb846ce6cab4ff0b75b047e8bc2c17878cd3b92a9da31c7e0",
+  "environment": {
+    "python": "3.13.17",
+    "sqlite": "3.50.4",
+    "platform": "Windows",
+    "platform_release": "11",
+    "architecture": "AMD64"
+  },
+  "fixture": {
+    "synthetic_only": true,
+    "messages": 1000,
+    "languages": {
+      "en": 250,
+      "zh": 250,
+      "ja": 250,
+      "ko": 250
+    },
+    "minimum_body_bytes_requested": 2048,
+    "attachment_every": 4,
+    "attachment_count": 250,
+    "attachment_bytes_each": 65536,
+    "source_bytes": 24694850,
+    "source_sha256": "0b52f84fd328c55c016466dc0dd54258f7870d11a3f31ffb997f15d680823a07",
+    "generation_seconds": 1.027984,
+    "kept_for_follow_up": true
+  },
+  "import": {
+    "seconds": 2.697697,
+    "messages_per_second": 370.69,
+    "receipt": {
+      "status": "complete",
+      "total": 1000,
+      "added": 1000,
+      "duplicates": 0,
+      "skipped": 0,
+      "warning_count": 0
+    }
+  },
+  "searches": [
+    {
+      "name": "selective_first",
+      "query": "selective0end",
+      "expected_matches": 1,
+      "matches": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "page_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "seconds": [
+        0.006833,
+        0.004625,
+        0.004763,
+        0.004743,
+        0.004795
+      ],
+      "first_seconds": 0.006833,
+      "median_seconds": 0.004763,
+      "max_seconds": 0.006833
+    },
+    {
+      "name": "selective_middle",
+      "query": "selective500end",
+      "expected_matches": 1,
+      "matches": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "page_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "seconds": [
+        0.005544,
+        0.004932,
+        0.004654,
+        0.004847,
+        0.00459
+      ],
+      "first_seconds": 0.005544,
+      "median_seconds": 0.004847,
+      "max_seconds": 0.005544
+    },
+    {
+      "name": "selective_last",
+      "query": "selective999end",
+      "expected_matches": 1,
+      "matches": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "page_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "seconds": [
+        0.004677,
+        0.004549,
+        0.004425,
+        0.004448,
+        0.004285
+      ],
+      "first_seconds": 0.004677,
+      "median_seconds": 0.004448,
+      "max_seconds": 0.004677
+    },
+    {
+      "name": "common_english",
+      "query": "commonbeacon",
+      "expected_matches": 1000,
+      "matches": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "page_sizes": [
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "seconds": [
+        0.027794,
+        0.030101,
+        0.028191,
+        0.028182,
+        0.027999
+      ],
+      "first_seconds": 0.027794,
+      "median_seconds": 0.028182,
+      "max_seconds": 0.030101
+    },
+    {
+      "name": "cjk_zh",
+      "query": "花园散步",
+      "expected_matches": 250,
+      "matches": [
+        250,
+        250,
+        250,
+        250,
+        250
+      ],
+      "page_sizes": [
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "seconds": [
+        0.024133,
+        0.025342,
+        0.024967,
+        0.024457,
+        0.024967
+      ],
+      "first_seconds": 0.024133,
+      "median_seconds": 0.024967,
+      "max_seconds": 0.025342
+    },
+    {
+      "name": "cjk_ja",
+      "query": "庭の散歩",
+      "expected_matches": 250,
+      "matches": [
+        250,
+        250,
+        250,
+        250,
+        250
+      ],
+      "page_sizes": [
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "seconds": [
+        0.024577,
+        0.024803,
+        0.024541,
+        0.024061,
+        0.024336
+      ],
+      "first_seconds": 0.024577,
+      "median_seconds": 0.024541,
+      "max_seconds": 0.024803
+    },
+    {
+      "name": "cjk_ko",
+      "query": "정원",
+      "expected_matches": 250,
+      "matches": [
+        250,
+        250,
+        250,
+        250,
+        250
+      ],
+      "page_sizes": [
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "seconds": [
+        0.025269,
+        0.024355,
+        0.024967,
+        0.025006,
+        0.025603
+      ],
+      "first_seconds": 0.025269,
+      "median_seconds": 0.025006,
+      "max_seconds": 0.025603
+    },
+    {
+      "name": "absent",
+      "query": "absentbeaconneverpresent",
+      "expected_matches": 0,
+      "matches": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "page_sizes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": [
+        0.005767,
+        0.005192,
+        0.004876,
+        0.004805,
+        0.004545
+      ],
+      "first_seconds": 0.005767,
+      "median_seconds": 0.004876,
+      "max_seconds": 0.005767
+    },
+    {
+      "name": "cjk_punctuation",
+      "query": "保修，发票",
+      "expected_matches": 250,
+      "matches": [
+        250,
+        250,
+        250,
+        250,
+        250
+      ],
+      "page_sizes": [
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "seconds": [
+        0.028437,
+        0.028071,
+        0.028405,
+        0.028294,
+        0.028247
+      ],
+      "first_seconds": 0.028437,
+      "median_seconds": 0.028294,
+      "max_seconds": 0.028437
+    },
+    {
+      "name": "mixed_cjk_accent_case",
+      "query": "CAFE 花园",
+      "expected_matches": 250,
+      "matches": [
+        250,
+        250,
+        250,
+        250,
+        250
+      ],
+      "page_sizes": [
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "seconds": [
+        0.020175,
+        0.018904,
+        0.018229,
+        0.018002,
+        0.019228
+      ],
+      "first_seconds": 0.020175,
+      "median_seconds": 0.018904,
+      "max_seconds": 0.020175
+    },
+    {
+      "name": "attachment_cjk_filename_fragment",
+      "query": "件记",
+      "expected_matches": 250,
+      "matches": [
+        250,
+        250,
+        250,
+        250,
+        250
+      ],
+      "page_sizes": [
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "seconds": [
+        0.024321,
+        0.025724,
+        0.026041,
+        0.028054,
+        0.026075
+      ],
+      "first_seconds": 0.024321,
+      "median_seconds": 0.026041,
+      "max_seconds": 0.028054
+    },
+    {
+      "name": "attachment_latin_filename_fragment",
+      "query": "etic",
+      "expected_matches": 250,
+      "matches": [
+        250,
+        250,
+        250,
+        250,
+        250
+      ],
+      "page_sizes": [
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "seconds": [
+        0.009851,
+        0.009408,
+        0.008969,
+        0.010003,
+        0.009418
+      ],
+      "first_seconds": 0.009851,
+      "median_seconds": 0.009418,
+      "max_seconds": 0.010003
+    }
+  ],
+  "fidelity_samples": [
+    {
+      "index": 0,
+      "raw_bytes": 91298,
+      "raw_equal": true,
+      "raw_sha256": "95efccc872dec1f1fc047c88d391998eade8b9a22535cc09c8811dc88b1ace5d",
+      "attachment_bytes": 65536,
+      "attachment_equal": true,
+      "attachment_sha256": "f3131f34c4db277f4c7230c465cf177f3fdbfe86177441363f2579b2e5090139"
+    },
+    {
+      "index": 500,
+      "raw_bytes": 91314,
+      "raw_equal": true,
+      "raw_sha256": "3bb54061dc0e3616d63ac2f27a58c5419e5ca74956b5b5fb5a80b55734573a64",
+      "attachment_bytes": 65536,
+      "attachment_equal": true,
+      "attachment_sha256": "6b553848e7db07205a79f7e8e1e7add0867a91b012a31c70a848fa0439982157"
+    },
+    {
+      "index": 996,
+      "raw_bytes": 91316,
+      "raw_equal": true,
+      "raw_sha256": "db865f20d65735e0454038ddf4969ae1954874ccdfb8cfef17ff4d7dfc5b5692",
+      "attachment_bytes": 65536,
+      "attachment_equal": true,
+      "attachment_sha256": "789d7d1a01f16c1328d4c2fca77d91387b50fd133c79d69d126f2cd28d686948"
+    },
+    {
+      "index": 999,
+      "raw_bytes": 2422,
+      "raw_equal": true,
+      "raw_sha256": "992f8cdadd280f8e3b5c81563043c90f9b0773ea101cce6bc9d8965b8308ac60"
+    }
+  ],
+  "duplicate_import": {
+    "seconds": 0.507256,
+    "receipt": {
+      "status": "complete",
+      "total": 1000,
+      "added": 0,
+      "duplicates": 1000,
+      "skipped": 0,
+      "warning_count": 0
+    }
+  },
+  "verification": {
+    "seconds": 0.257568,
+    "checked": 1000,
+    "mismatches": [],
+    "sqlite": "ok",
+    "search_index": "ok",
+    "receipts": "ok"
+  },
+  "cancellation_resume": {
+    "executed": true,
+    "requested_after": 250,
+    "durable_messages": 300,
+    "cancel_seconds": 0.776949,
+    "cancel_receipt": {
+      "status": "cancelled",
+      "total": 300,
+      "added": 300,
+      "duplicates": 0,
+      "skipped": 0,
+      "warning_count": 0
+    },
+    "cancel_verification": {
+      "seconds": 0.038018,
+      "checked": 300,
+      "mismatches": [],
+      "sqlite": "ok",
+      "search_index": "ok",
+      "receipts": "ok"
+    },
+    "resume_seconds": 2.136439,
+    "resume_receipt": {
+      "status": "complete",
+      "total": 1000,
+      "added": 700,
+      "duplicates": 300,
+      "skipped": 0,
+      "warning_count": 0
+    },
+    "resume_verification": {
+      "seconds": 0.247197,
+      "checked": 1000,
+      "mismatches": [],
+      "sqlite": "ok",
+      "search_index": "ok",
+      "receipts": "ok"
+    }
+  },
+  "archive_bytes_after_duplicate_import": 28360704,
+  "peak_memory_bytes": 35237888,
+  "peak_memory_method": "Windows peak process working set",
+  "limits": [
+    "One synthetic local run; not real-provider, large-capacity, HTTP or browser evidence.",
+    "CJK queries use the application's literal-substring fallback, not FTS segmentation.",
+    "Queries follow import and repeat in one process; OS/database caches are not flushed.",
+    "Attachments are deterministic repetitive binary data; no attachment-text indexing is tested.",
+    "Raw and attachment byte comparisons are sampled; integrity hashes cover every stored message.",
+    "Peak memory covers fixture generation and all benchmark phases, not import alone.",
+    "Cancellation waits for a committed progress boundary, not an exact requested ordinal."
+  ]
+}

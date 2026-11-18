@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-13",
+  "status": "internal_alpha_candidate_not_published",
+  "internal_version": "0.1.0-alpha.4",
+  "exe_sha256": "28b812608f31301f65dc2c1c96e9e5b1176b1f5a1f9f791dc34baaf305b36152",
+  "regression": {
+    "python_total": 191,
+    "python_passed": 189,
+    "python_skipped": 2,
+    "python_seconds": 34.230,
+    "frontend_dom_passed": 58,
+    "connections_dom_passed": 30,
+    "bilingual_dom_passed": 15
+  },
+  "bundle_reconciliation": {
+    "passed": true,
+    "native_components": 21,
+    "application_modules": 10,
+    "static_resources": 9,
+    "desktop_notices": 21,
+    "project_notices": 3,
+    "license_hashes": 19
+  },
+  "actual_exe_http_smoke": {
+    "groups_passed": 8,
+    "data": "synthetic",
+    "restore_mode": "extracted_source_helper_http",
+    "native_restore_tested": false
+  },
+  "real_browser_source": {
+    "rich_preference_persisted": true,
+    "rich_english_labels": ["Subtle", "Rich"],
+    "rich_effect_finished": true,
+    "sample_canvas_pixels": 351120,
+    "sample_max_raf_callback_ms": 2.9,
+    "sample_long_tasks_over_50ms": 0,
+    "reduced_motion_canvas_paints": 0,
+    "synthetic_eml_import_added": 1,
+    "import_light_finished": true,
+    "corrected_date_filter_cleared_its_error": true,
+    "scope": "One local automation sample; RAF callback timing is not total frame cost or a low-end-device guarantee. The first cross-round narrow test remained 1180px and is not narrow evidence."
+  },
+  "real_browser_packaged_exe": {
+    "viewport_width": 390,
+    "preferences_dialog_width": 331.617,
+    "preferences_client_width": 320,
+    "preferences_scroll_width": 320,
+    "document_scroll_width": 375,
+    "horizontal_overflow": false,
+    "scope": "Viewport override, measurement and screenshot in one browser invocation; not a physical phone or native-window test."
+  },
+  "unverified": [
+    "Native restore dialog completion in this candidate",
+    "Second clean Windows machine",
+    "Real Gmail automatic arrival after initial successful archive",
+    "Paid Proton Mail Bridge",
+    "Low-end physical device and screen-reader output",
+    "Owner acceptance of visual effects"
+  ]
+}

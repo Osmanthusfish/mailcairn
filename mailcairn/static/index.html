@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183c32">
+  <meta name="description" content="Your email archive, safely on your own computer. Search, preserve, and find what matters.">
+  <title>MailCairn — your personal email archive</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23183c32'/%3E%3Cpath d='M18 43h28M22 32h20M27 21h10' stroke='%23f1dfb6' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="/fonts/HankenGrotesk.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/fonts.css">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/startup.js"></script>
+  <script src="/i18n.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-archive" viewBox="0 0 24 24"><path d="M4 8h16v12H4zM3 4h18v4H3zM9 12h6"/></symbol>
+    <symbol id="i-import" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 15v5h16v-5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M3 4h7l2 2 2-2h7v15h-7l-2 2-2-2H3zM12 6v15"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6zM8 11l3 3 5-5"/></symbol>
+    <symbol id="i-clip" viewBox="0 0 24 24"><path d="m8 12 7-7a4 4 0 0 1 6 6L10 22a6 6 0 0 1-8-8L13 3m-8 14 10-10"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16M8 3v6m8 0v6m-6 0v6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-11v1"/></symbol>
+  </svg>
+  <a class="skip-link" href="#main-content">Skip to archive</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#archive" aria-label="MailCairn home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>MailCairn</span>
+      </a>
+      
+      <nav class="nav-list">
+        <button class="nav-item active" data-view="archive" aria-current="page"><svg class="icon"><use href="#i-archive"/></svg><span>All mail</span><span id="nav-count" class="nav-count">0</span></button>
+        <button class="nav-item" data-view="connections"><svg class="icon"><use href="#i-mail"/></svg><span>Mailboxes</span><span id="connection-count" class="nav-count" hidden>0</span></button>
+        <button class="nav-item" data-view="imports"><svg class="icon"><use href="#i-import"/></svg><span>Import history</span></button>
+        <button class="nav-item" data-view="guide"><svg class="icon"><use href="#i-book"/></svg><span>Getting started</span></button>
+      </nav>
+      <div class="sidebar-tools"><button class="nav-item" id="open-commands" aria-label="Commands" title="Commands (Ctrl / ⌘ K)"><span class="tool-symbol" aria-hidden="true">⌘</span><span>Commands</span><kbd>Ctrl K</kbd></button><button class="nav-item" id="open-preferences" aria-label="Reading room" title="Reading room"><svg class="icon"><use href="#i-filter"/></svg><span>Reading room</span></button></div>
+      <div class="sidebar-bottom">
+        
+        <a class="nav-item backup-link" href="/api/backup" download><svg class="icon"><use href="#i-download"/></svg><span>Back up archive</span></a>
+        <div class="sidebar-meta"><span>MailCairn 0.1.0-alpha.9</span></div>
+      </div>
+    </aside>
+
+    <main id="main-content" tabindex="-1">
+      <header class="page-header">
+        <div><p class="eyebrow" id="page-eyebrow" hidden></p><h1 id="page-title">All mail</h1><p class="page-subtitle" id="page-subtitle" hidden></p></div>
+        <div class="page-actions"><div class="language-control" role="group" aria-label="Language"><button type="button" class="language-option" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button><button type="button" class="language-option" data-language="zh-CN" lang="zh-CN" aria-label="简体中文" aria-pressed="false">中文</button></div><button class="button secondary" data-open-import><svg class="icon"><use href="#i-import"/></svg>Import file</button><button class="button primary" data-open-connect><svg class="icon"><use href="#i-mail"/></svg>Connect mailbox</button></div>
+      </header>
+
+      <div id="global-error" class="banner error" role="alert" hidden><svg class="icon"><use href="#i-info"/></svg><span id="global-error-text"></span><button class="icon-button" id="dismiss-error" aria-label="Dismiss error"><svg class="icon"><use href="#i-close"/></svg></button></div>
+      <div id="task-bar" class="task-bar" role="status" hidden><span class="spinner"></span><span id="task-bar-text">Working on your archive…</span><button class="text-button" id="show-task">View progress</button></div>
+      <div id="loading-screen" class="initial-loading"><span class="spinner"></span>Opening your archive…</div>
+      <section id="startup-recovery" class="reconnect-box" role="alert" aria-labelledby="startup-title" hidden><h2 id="startup-title">MailCairn couldn’t load.</h2><p id="startup-message">Reload this page, or choose “Open archive” in the MailCairn window.</p><button type="button" id="startup-reload" class="button secondary">Reload page</button></section>
+      <noscript><section class="reconnect-box"><h2>JavaScript is required / 需要启用 JavaScript</h2><p>Enable JavaScript for this local page, then reload it. / 请为此本机页面启用 JavaScript，然后重新加载。</p></section></noscript>
+
+      <section id="view-archive" class="view" aria-label="Email archive" hidden>
+        <div id="archive-summary" class="archive-summary" hidden><span><strong id="summary-count">0</strong> <span id="summary-label">messages preserved</span></span><span class="summary-divider"></span><span id="summary-range"></span><span class="summary-size" id="summary-size"></span></div>
+        <div id="empty-archive" class="empty-archive" hidden>
+          
+          <div class="empty-desk">
+            <div class="empty-copy"><h2>Your letters,<br>within reach.</h2><p>Keep your mail close. Find it whenever you need.</p><div class="empty-actions"><button class="button primary large" data-open-connect>Connect mailbox <svg class="icon"><use href="#i-arrow"/></svg></button><button class="text-button" data-open-import>Import a file</button></div><span class="empty-format">One-way archiving · Your cloud mail stays untouched</span></div>
+            <div class="archive-object" data-paper-surface aria-hidden="true">
+              <div class="envelope-shadow"></div>
+              <div class="envelope-rig">
+                <div class="envelope-body"></div>
+                <div class="envelope-flap"><i></i></div>
+                <div class="catalogue-sheet sheet-far"></div>
+                <div class="catalogue-sheet sheet-under"></div>
+                <div class="catalogue-sheet sheet-middle"></div>
+                <div class="catalogue-sheet sheet-main"><div class="sheet-heading">MailCairn</div><div class="sheet-ruling"></div><div class="sheet-title">Correspondence</div><div class="sheet-lines"></div><div class="sheet-footer"><span>↳</span></div></div>
+                <div class="envelope-pocket"><i></i></div>
+                <div class="paper-seal">M</div>
+                <div class="envelope-glint"></div>
+              </div>
+              <canvas id="archive-light" class="archive-light"></canvas>
+            </div>
+          </div>
+          
+        </div>
+        <div id="archive-workspace" hidden>
+          <form id="search-form" class="search-toolbar" role="search"><div class="search-input-wrap"><svg class="icon"><use href="#i-search"/></svg><label class="sr-only" for="search-input">Search archived mail</label><input id="search-input" type="search" placeholder="Search mail, people, or attachment names…" autocomplete="off" maxlength="500"><kbd>/</kbd></div><button type="button" id="filter-toggle" class="button secondary" aria-expanded="false" aria-controls="filter-panel"><svg class="icon"><use href="#i-filter"/></svg>Filters<span id="filter-count" class="filter-count" hidden></span></button><a id="export-results" class="button secondary" href="/api/export" download><svg class="icon"><use href="#i-download"/></svg><span>Export results</span></a></form>
+          <div id="filter-panel" class="filter-panel" hidden><label>From<input id="filter-sender" type="text" placeholder="Name or email" maxlength="300"></label><label>On or after<input id="filter-after" type="date"></label><label>On or before<input id="filter-before" type="date"></label><label class="checkbox-label"><input id="filter-attachments" type="checkbox">Has attachments</label><button class="text-button" id="clear-filters">Clear filters</button><p class="field-note">All search words must match. Searches include body text and attachment names, not file contents.</p></div>
+          <div id="source-filter" class="source-filter" hidden><span id="source-filter-text"></span><button class="text-button" id="clear-source">Show all mail</button></div>
+          <div class="mail-workspace">
+            <section class="message-list-panel" aria-label="Messages"><div class="list-heading"><strong id="results-label" aria-live="polite">Your mail</strong><button id="retry-search" class="text-button" hidden>Try again</button><span title="Use ↑ / ↓ inside the message list">Newest first <kbd>↑ ↓</kbd></span></div><div id="message-list" class="message-list"></div><div id="list-empty" class="list-empty" hidden><svg class="icon"><use href="#i-search"/></svg><h3>No matching mail</h3><p>Try fewer words or a wider date range.</p><button class="text-button" id="reset-search">Clear search and filters</button></div><div class="pagination"><button id="previous-page" class="icon-button" aria-label="Previous page" disabled>←</button><span id="page-label">0 messages</span><button id="next-page" class="icon-button" aria-label="Next page" disabled>→</button></div></section>
+            <section id="reader" class="reader" aria-label="Selected email" tabindex="-1"><div class="reader-placeholder"><svg class="icon"><use href="#i-mail"/></svg><h3>Select a message</h3></div></section>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-connections" class="view connections-view" aria-label="Connected mailboxes" hidden>
+        <p class="connections-scope">Inbox only. Checks for new mail every 5 minutes while MailCairn is running.</p>
+        <div id="connections-error" class="banner error" role="alert" hidden></div>
+        <div id="connections-announcement" class="sr-only" role="status" aria-atomic="true"></div>
+        <div id="connections-list" class="connections-list"></div>
+      </section>
+
+      <section id="view-imports" class="view" aria-label="Import history" hidden>
+        <div class="history-intro"><div><h2>Import history</h2><p>Added, duplicate, and skipped messages from each import.</p></div><button class="button secondary" id="verify-button"><svg class="icon"><use href="#i-shield"/></svg>Check archive integrity</button></div>
+        <div id="verify-result" hidden></div>
+        <div id="import-history" class="import-history"></div>
+        <div class="note-box"><svg class="icon"><use href="#i-info"/></svg><p>A completed import accounts for recognized records in that file. It cannot prove your provider exported every email. Keep your original export and a separate backup.</p></div>
+      </section>
+
+      <section id="view-guide" class="view guide-view" aria-label="Getting started" hidden>
+        <div class="guide-lead"><h2>Bring your mail along.</h2><p>Import existing exports or connect a mailbox for one-way local archiving. Your source files and cloud mail stay untouched.</p></div>
+        <section id="mailbox-setup-guide" class="mailbox-setup-guide" aria-labelledby="mailbox-guide-title">
+          <h3 id="mailbox-guide-title" tabindex="-1">Connect a mailbox</h3>
+          <p>Choose your email provider below for step-by-step instructions.</p>
+          <details id="mailbox-guide-gmail"><summary>Gmail</summary><div class="mailbox-guide-content">
+            <ol><li>In your Google Account, turn on 2-Step Verification.</li><li>Create a Google app password for MailCairn. This is a separate password for this app, not your usual Google password.</li><li>Choose Gmail in MailCairn, enter your full Gmail address and the app password, then choose Start syncing.</li></ol>
+            <p>App passwords may be unavailable for work or school accounts, Advanced Protection, or some security-key-only setups. If Google does not offer one, import a Google Takeout export instead.</p>
+            <a href="https://support.google.com/accounts/answer/185833" target="_blank" rel="noopener noreferrer">Google's app-password instructions ↗</a><a href="https://myaccount.google.com/apppasswords" target="_blank" rel="noopener noreferrer">Create an app password ↗</a>
+            <button type="button" class="text-button" data-connect-provider="gmail">Connect Gmail</button>
+          </div></details>
+          <details id="mailbox-guide-proton"><summary>Proton Mail</summary><div class="mailbox-guide-content">
+            <ol><li>Automatic sync requires a paid Proton Mail plan and Proton Mail Bridge installed on this computer. Proton Free does not support this connection.</li><li>Open Bridge and sign in to Proton there. Keep Bridge running while MailCairn syncs.</li><li>Copy the username and password shown in Bridge's mailbox settings into MailCairn. Your usual Proton account password will not work here.</li></ol>
+            <p>The default Bridge port is 1143. If Bridge shows a different IMAP port, open Advanced settings in MailCairn and enter that number. The local Bridge connection uses STARTTLS; MailCairn remembers its certificate and stops if it changes.</p>
+            <p>Without a paid plan, use Proton Mail Export Tool to export EML files, then import the folder into MailCairn. File import does not require Bridge.</p>
+            <a href="https://proton.me/mail/bridge" target="_blank" rel="noopener noreferrer">Set up Proton Mail Bridge ↗</a><button type="button" class="text-button" data-connect-provider="proton">Connect Proton Mail</button>
+          </div></details>
+          <details id="mailbox-guide-imap"><summary>Other email providers</summary><div class="mailbox-guide-content">
+            <p>Find your provider's incoming-mail settings for IMAP. You need the incoming server address, your username (often your full email address), and a password. Some providers require a separate app password or enabling IMAP first.</p>
+            <p>Enter those details under Other email. The default port is 993, using an encrypted SSL/TLS connection. Only change the port in Advanced settings if your provider specifies another SSL/TLS port. Unencrypted connections and remote STARTTLS-only servers are not supported.</p>
+            <p>MailCairn cannot connect to a provider that requires OAuth sign-in only. You can still import its exported mail files.</p>
+            <button type="button" class="text-button" data-connect-provider="imap">Connect other email</button>
+          </div></details>
+          <details id="mailbox-guide-sync"><summary>What happens after connecting</summary><div class="mailbox-guide-content">
+            <p>The first sync saves existing mail from your inbox (INBOX). MailCairn then checks for new mail every 5 minutes while it is running. Other folders and Sent are not included.</p>
+            <p>After a connection error, automatic retries continue while MailCairn is running, the mailbox is not paused, and its password is available. A retry may still fail until the connection is available again.</p>
+            <p>If Gmail opens in your browser but syncing fails, your network may allow the website but block mail connections. A connection error alone does not mean the app password is wrong. You can leave other apps running and import a Google Takeout export instead.</p>
+            <p>Closing the browser tab does not stop sync; quitting MailCairn does. Mail moved out of the inbox or deleted before the next check can be missed.</p>
+            <p>Adding a mailbox saves its settings; it does not confirm that sign-in worked. Open Mailboxes to check the status, last successful sync time and saved count. Choose View mail to read the archive. Sync now checks immediately; Pause stops future checks. Disconnect removes the connection but keeps archived mail.</p>
+            <p>MailCairn only reads and copies mail. It does not send mail, mark it as read, or delete it from your provider.</p>
+            <p>On Windows, when Remember on this computer is available, it protects the password with your Windows account using DPAPI. Otherwise, or when you turn this option off, the password stays only in memory. You must reconnect with your password after restarting MailCairn.</p>
+            <p>Mailbox settings and passwords are stored separately from the mail database and are not included in Back up archive. The mail archive itself is not encrypted; protect the computer and your backup copies.</p>
+          </div></details>
+        </section>
+        <div class="guide-grid"><article class="guide-card"><span class="step-number">01</span><h3>Export from your mail app</h3><p>For Gmail, use Google Takeout, select Mail, download the export, and unzip it. Locate the <code>.mbox</code> file. Thunderbird can also export MBOX using ImportExportTools NG.</p><p>Proton Mail: use the Proton Mail Export Tool to export EML files, then choose the exported folder here. JSON sidecar files are skipped. A paid Bridge subscription is not required for this workflow.</p><p>Individual messages saved as <code>.eml</code> work too. ZIP, PST, OST, and mboxcl are not supported.</p></article><article class="guide-card"><span class="step-number">02</span><h3>Import and review the receipt</h3><p>Select one or more files. MailCairn preserves message bytes and builds a search index. Import the same file again safely: byte-identical messages are stored once.</p><p id="guide-limits">The default limits are <strong>20 GiB per file</strong> and <strong>32 MiB per message</strong>. Oversized or unreadable records appear in the receipt, rather than disappearing silently.</p></article><article class="guide-card"><span class="step-number">03</span><h3>Find what you need</h3><p>Search subject lines, senders, recipients, body text, and attachment names. Use dates or “Has attachments” to narrow the results. Words are matched together; CJK text uses substring search.</p><p>Emails are displayed as plain text. Remote images, tracking pixels, scripts, and HTML layouts are not loaded. Download the original EML when you need it.</p></article><article class="guide-card"><span class="step-number">04</span><h3>Make a separate backup</h3><p>Use <strong>Back up archive</strong> to save a consistent SQLite copy containing your mail, attachments, index, and import receipts. Keep a copy on another drive.</p><p>In the desktop window, choose “Restore backup…” to verify and open a copy in a new folder. From source, run:<code class="command">python app.py --data-dir restored --restore-backup archive.sqlite3</code>See the included README for details.</p></article></div>
+        <div class="guide-details"><article><svg class="icon"><use href="#i-shield"/></svg><h3>Local, with clear limits</h3><p>The archive is not encrypted. Anyone who can access your files may read it. Use your operating system’s disk encryption and protect your backups. “Check archive integrity” checks stored bytes and the search index; it does not certify a complete provider export.</p></article><article><svg class="icon"><use href="#i-archive"/></svg><h3>Your archive file</h3><p>Mail and receipts are stored in the database below. Use the backup button while the app is running. Mailbox settings and passwords are stored separately and are not included in this backup.</p><code id="archive-path" class="archive-path">Opening archive…</code><a href="/api/backup" class="text-button" download>Back up archive <span aria-hidden="true">↗</span></a></article></div>
+      </section>
+      <footer class="main-footer"><span><span class="status-dot"></span>On this computer</span><button class="text-button" id="footer-commands">Keyboard commands <kbd>?</kbd></button></footer>
+    </main>
+  </div>
+
+  <dialog id="connect-dialog" class="connect-dialog" aria-labelledby="connect-title">
+    <div class="dialog-top"><div><h2 id="connect-title">Connect mailbox</h2></div><div class="language-control" role="group" aria-label="Language"><button type="button" class="language-option" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button><button type="button" class="language-option" data-language="zh-CN" lang="zh-CN" aria-label="简体中文" aria-pressed="false">中文</button></div><button class="icon-button" data-close-dialog="connect-dialog" aria-label="Close mailbox setup"><svg class="icon"><use href="#i-close"/></svg></button></div>
+    <form id="connection-form">
+      <div class="provider-choices" role="group" aria-label="Email provider">
+        <button type="button" class="provider-choice" data-provider="gmail" aria-pressed="true">Gmail</button>
+        <button type="button" class="provider-choice" data-provider="proton" aria-pressed="false">Proton Mail</button>
+        <button type="button" class="provider-choice" data-provider="imap" aria-pressed="false">Other email</button>
+      </div>
+      <div id="gmail-setup" class="provider-help"><p>Use a Google app password, not your usual Google password.</p></div>
+      <div id="proton-setup" class="provider-help" hidden><p>Requires a paid Proton plan and Bridge running on this computer. Use the username and password from Bridge.</p></div>
+      <div id="imap-setup" class="provider-help" hidden><p>Use the incoming-mail settings from your email provider.</p></div>
+      <button id="mailbox-setup-help" type="button" class="text-button connection-help">How to connect your mailbox</button>
+      <div class="connection-fields">
+        <label id="connection-host-field" class="connection-field connection-field-wide" hidden><span>Incoming mail server</span><input id="connection-host" type="text" autocomplete="off" maxlength="253" spellcheck="false" placeholder="imap.example.com" disabled></label>
+        <label class="connection-field connection-field-wide"><span id="connection-username-label">Gmail address</span><input id="connection-username" type="email" autocomplete="username" maxlength="320" spellcheck="false" required></label>
+        <label class="connection-field connection-field-wide"><span id="connection-password-label">App password</span><input id="connection-password" type="password" autocomplete="off" maxlength="2048" required></label>
+      </div>
+      <details id="connection-advanced" class="connection-advanced" hidden><summary>Advanced settings</summary><label id="connection-port-field" class="connection-field"><span>Port</span><input id="connection-port" type="number" min="1" max="65535" value="993" inputmode="numeric" required disabled></label><p>Change this only if your provider or Bridge shows a different port.</p></details>
+      <label id="connection-remember-option" class="connection-remember" hidden><input id="connection-remember" type="checkbox" disabled><span>Remember on this computer</span></label>
+      <p id="connection-storage-note" class="field-note">Preparing setup…</p>
+      <p class="connection-scope">Inbox only. Keep MailCairn running to receive new mail.</p>
+      <div id="connect-error" class="banner error" role="alert" hidden></div>
+      <div class="connection-submit"><p id="connect-status" role="status"></p><button id="connect-submit" type="submit" class="button primary" disabled>Start syncing</button></div>
+    </form>
+  </dialog>
+  <dialog id="import-dialog" class="import-dialog" data-import-phase="choose" aria-labelledby="import-title"><div class="dialog-top"><div><h2 id="import-title">Import your archive</h2></div><div class="language-control" role="group" aria-label="Language"><button type="button" class="language-option" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button><button type="button" class="language-option" data-language="zh-CN" lang="zh-CN" aria-label="简体中文" aria-pressed="false">中文</button></div><button class="icon-button" data-close-dialog="import-dialog" aria-label="Close import dialog"><svg class="icon"><use href="#i-close"/></svg></button></div><canvas id="import-light" class="import-light" aria-hidden="true"></canvas><ol class="import-steps" aria-label="Import stages"><li data-import-step="choose" aria-current="step">01 Choose</li><li data-import-step="copy">02 Copy</li><li data-import-step="index">03 Catalogue</li><li data-import-step="review">04 Review</li></ol><p class="dialog-description">Choose extracted MBOX files or individual EML messages. Your files stay on this computer.</p><div id="drop-zone" class="drop-zone"><span class="drop-icon"><svg class="icon"><use href="#i-import"/></svg></span><h3>Drop your mail files here</h3><p>or choose them from your computer</p><button class="button primary" id="choose-files" autofocus>Choose files</button><button type="button" class="button secondary" id="choose-folder" hidden>Choose folder</button><input type="file" id="folder-input" aria-label="Choose folder" webkitdirectory multiple class="sr-only" tabindex="-1"><input type="file" id="file-input" aria-label="Choose files" multiple accept=".mbox,.eml" class="sr-only" tabindex="-1"><small>MBOX / EML · up to 20 GiB per file</small><p class="field-note" id="folder-help" hidden>Choose a folder containing EML or MBOX files. Subfolders are included; other files are skipped and counted.</p></div><p id="folder-summary" class="field-note" role="status" hidden></p><div id="import-progress" class="import-progress" hidden><p id="import-queue" class="field-note" hidden></p><div class="progress-heading"><strong id="import-filename"></strong><span id="import-percent"></span></div><progress id="import-meter" value="0" max="100" aria-label="Import progress"></progress><p id="import-stage" role="status"></p><button class="button secondary small" id="cancel-import">Stop import</button></div><div id="import-outcomes" class="import-outcomes" aria-live="polite"></div><div id="import-review-actions" class="import-review-actions" hidden><p id="import-review-summary" role="status"></p><p id="import-review-error" class="field-note" role="alert" hidden></p><button type="button" id="view-imported-mail" class="button primary" hidden>View imported mail</button></div><p class="dialog-footnote"><svg class="icon"><use href="#i-shield"/></svg>Originals stay untouched. Exact duplicates are kept only once.</p></dialog>
+  <dialog id="receipt-dialog" class="receipt-dialog" aria-labelledby="receipt-title"><div class="dialog-top"><div><h2 id="receipt-title">Import details</h2></div><div class="language-control" role="group" aria-label="Language"><button type="button" class="language-option" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button><button type="button" class="language-option" data-language="zh-CN" lang="zh-CN" aria-label="简体中文" aria-pressed="false">中文</button></div><button class="icon-button" data-close-dialog="receipt-dialog" aria-label="Close receipt dialog"><svg class="icon"><use href="#i-close"/></svg></button></div><div id="receipt-content"></div></dialog>
+  <dialog id="preferences-dialog" class="preferences-dialog" aria-labelledby="preferences-title"><div class="dialog-top"><div><h2 id="preferences-title">Your reading room</h2></div><div class="language-control" role="group" aria-label="Language"><button type="button" class="language-option" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button><button type="button" class="language-option" data-language="zh-CN" lang="zh-CN" aria-label="简体中文" aria-pressed="false">中文</button></div><button class="icon-button" data-close-dialog="preferences-dialog" aria-label="Close reading preferences"><svg class="icon"><use href="#i-close"/></svg></button></div>
+    <form id="preferences-form"><fieldset><legend>Light</legend><div class="preference-choices"><label><input type="radio" name="theme" value="system" autofocus><span>System</span></label><label><input type="radio" name="theme" value="light"><span>Daylight</span></label><label><input type="radio" name="theme" value="dark"><span>Lamplight</span></label></div></fieldset>
+    <fieldset><legend>Accent color</legend><div class="preference-choices accent-choices"><label><input type="radio" name="accent" value="cedar"><span><i class="ink-swatch cedar"></i>Cedar</span></label><label><input type="radio" name="accent" value="blue"><span><i class="ink-swatch blue"></i>Blue</span></label><label><input type="radio" name="accent" value="umber"><span><i class="ink-swatch umber"></i>Umber</span></label></div></fieldset>
+    <fieldset><legend>Reading type size</legend><div class="preference-choices"><label><input type="radio" name="type" value="small"><span>Small</span></label><label><input type="radio" name="type" value="standard"><span>Standard</span></label><label><input type="radio" name="type" value="large"><span>Large</span></label></div></fieldset>
+    <fieldset><legend>Message spacing</legend><div class="preference-choices"><label><input type="radio" name="density" value="comfortable"><span>Comfortable</span></label><label><input type="radio" name="density" value="compact"><span>Compact</span></label></div></fieldset>
+    <fieldset><legend>Light effects</legend><div class="preference-choices"><label><input type="radio" name="atmosphere" value="quiet"><span>Subtle</span></label><label><input type="radio" name="atmosphere" value="full"><span>Rich</span></label></div></fieldset>
+    <label class="motion-option"><span><strong>Single-key shortcuts</strong><small>Use / to search, I to import, G for mail, H for history.<br>Use , for reading room and ? for commands. Ctrl / ⌘ K always opens commands.</small></span><input id="shortcut-preference" name="shortcuts" type="checkbox"></label><label class="motion-option"><span><strong>Motion</strong><small>Follows your system’s reduced-motion setting.</small></span><input id="motion-preference" name="motion" type="checkbox"></label>
+    <div class="preference-footer"><button type="button" id="reset-preferences" class="text-button">Reset to defaults</button><span id="preference-status" role="status">Saved only in this browser</span></div></form>
+  </dialog>
+  <dialog id="command-dialog" class="command-dialog" aria-labelledby="command-title"><div class="command-top"><h2 id="command-title">Go to…</h2><div class="language-control" role="group" aria-label="Language"><button type="button" class="language-option" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button><button type="button" class="language-option" data-language="zh-CN" lang="zh-CN" aria-label="简体中文" aria-pressed="false">中文</button></div><button class="icon-button" data-close-dialog="command-dialog" aria-label="Close commands">Esc</button></div><label class="sr-only" for="command-search">Find a command</label><input id="command-search" type="search" placeholder="Search commands…" autocomplete="off" autofocus aria-controls="command-results"><div id="command-results" class="command-results"></div><div class="command-footer"><span><kbd>↑ ↓</kbd> Move</span><span><kbd>Enter</kbd> Open</span><span><kbd>Esc</kbd> Close</span></div></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

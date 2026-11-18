@@ -1,0 +1,499 @@
+{
+  "reviewed_utc": "2026-11-18T04:53:51.514714+00:00",
+  "artifact": "MailCairn-0.1.0-alpha.9-windows-x64",
+  "version": "0.1.0-alpha.9",
+  "exe_sha256": "54181677c6dd415191c7f7bb46737d33cf17ec574094eff81c9775bc08188a35",
+  "python_build": "3.13.17 (tags/v3.13.17:64e080d, Oct 21 2026, 14:08:53) [MSC v.1944 64 bit (AMD64)]",
+  "selected_runtime_versions": {
+    "python": "3.13.17",
+    "openssl": "3.5.9",
+    "sqlite": "3.50.4",
+    "expat": "2.8.5",
+    "zlib": "1.3.1",
+    "mpdecimal": "4.0.0",
+    "tcl": "8.6.15",
+    "tk": "8.6.15",
+    "pyinstaller": "6.22.0",
+    "pyinstaller_hooks_contrib": "2026.9",
+    "xz": "5.2.5"
+  },
+  "summary": {
+    "native_count": 21,
+    "external_native_count": 0,
+    "all_native_bytes_match_toc_sources": true,
+    "unexpected_python_thirdparty_modules": 0,
+    "all_application_code_matches_current_source": true,
+    "all_static_bytes_match_current_source": true,
+    "all_desktop_notices_match_source": true,
+    "manifest_19_hashes_valid": true,
+    "python_code_objects_checked_for_absolute_filenames": 10039
+  },
+  "native_files": [
+    {
+      "name": "VCRUNTIME140.dll",
+      "source": "build-runtime/VCRUNTIME140.dll",
+      "origin": "selected-python-runtime",
+      "sha256": "d1f4225df2cd877dbf130d5668a021dce3f94118455ff5ec952061c30afc9ce7",
+      "source_sha256": "d1f4225df2cd877dbf130d5668a021dce3f94118455ff5ec952061c30afc9ce7",
+      "matches_source": true
+    },
+    {
+      "name": "_bz2.pyd",
+      "source": "build-runtime/DLLs/_bz2.pyd",
+      "origin": "selected-python-runtime",
+      "sha256": "0adf0680f54eec173401230df0aa561aa188c7f4d40e5f2ba790d333c6057d8d",
+      "source_sha256": "0adf0680f54eec173401230df0aa561aa188c7f4d40e5f2ba790d333c6057d8d",
+      "matches_source": true
+    },
+    {
+      "name": "_ctypes.pyd",
+      "source": "build-runtime/DLLs/_ctypes.pyd",
+      "origin": "selected-python-runtime",
+      "sha256": "487d9041455132d74ed26c0eae514675c31010a926db0cd6c6f391fcccc66c42",
+      "source_sha256": "487d9041455132d74ed26c0eae514675c31010a926db0cd6c6f391fcccc66c42",
+      "matches_source": true
+    },
+    {
+      "name": "_decimal.pyd",
+      "source": "build-runtime/DLLs/_decimal.pyd",
+      "origin": "selected-python-runtime",
+      "sha256": "7e8e5d026e22be2669b2ac6175fece6b7fbe2faf1e456fa4785130832d244955",
+      "source_sha256": "7e8e5d026e22be2669b2ac6175fece6b7fbe2faf1e456fa4785130832d244955",
+      "matches_source": true
+    },
+    {
+      "name": "_hashlib.pyd",
+      "source": "build-runtime/DLLs/_hashlib.pyd",
+      "origin": "selected-python-runtime",
+      "sha256": "fc9075f3a836fdcbb826b541f4d1e9382d84c73f830f5f51f8ca3b9ccb9d42cb",
+      "source_sha256": "fc9075f3a836fdcbb826b541f4d1e9382d84c73f830f5f51f8ca3b9ccb9d42cb",
+      "matches_source": true
+    },
+    {
+      "name": "_lzma.pyd",
+      "source": "build-runtime/DLLs/_lzma.pyd",
+      "origin": "selected-python-runtime",
+      "sha256": "09596ee41dadfabe006429f1cbb7505a3006daa80206ae2dd2d0d8d5936b6229",
+      "source_sha256": "09596ee41dadfabe006429f1cbb7505a3006daa80206ae2dd2d0d8d5936b6229",
+      "matches_source": true
+    },
+    {
+      "name": "_queue.pyd",
+      "source": "build-runtime/DLLs/_queue.pyd",
+      "origin": "selected-python-runtime",
+      "sha256": "aa1bc394ac6ed619b2525e631665431e9fbd798cd7d8374755efed9c3d325539",
+      "source_sha256": "aa1bc394ac6ed619b2525e631665431e9fbd798cd7d8374755efed9c3d325539",
+      "matches_source": true
+    },
+    {
+      "name": "_socket.pyd",
+      "source": "build-runtime/DLLs/_socket.pyd",
+      "origin": "selected-python-runtime",
+      "sha256": "03ac131ec3fa4c550d36fa7c5cad3601cbe6c8f18e1a65b9bd8a65ce1131f9e1",
+      "source_sha256": "03ac131ec3fa4c550d36fa7c5cad3601cbe6c8f18e1a65b9bd8a65ce1131f9e1",
+      "matches_source": true
+    },
+    {
+      "name": "_sqlite3.pyd",
+      "source": "build-runtime/DLLs/_sqlite3.pyd",
+      "origin": "selected-python-runtime",
+      "sha256": "721707b1a66b51e2c1a3be964f4d5d0c6eb89dc6671b8ea121a10d46f5041338",
+      "source_sha256": "721707b1a66b51e2c1a3be964f4d5d0c6eb89dc6671b8ea121a10d46f5041338",
+      "matches_source": true
+    },
+    {
+      "name": "_ssl.pyd",
+      "source": "build-runtime/DLLs/_ssl.pyd",
+      "origin": "selected-python-runtime",
+      "sha256": "74bfe7a396737cf5910cf4a789d9cf4263ba6ba93c994ce8d5e2f61fa972097d",
+      "source_sha256": "74bfe7a396737cf5910cf4a789d9cf4263ba6ba93c994ce8d5e2f61fa972097d",
+      "matches_source": true
+    },
+    {
+      "name": "_tkinter.pyd",
+      "source": "build-runtime/DLLs/_tkinter.pyd",
+      "origin": "selected-python-runtime",
+      "sha256": "a76ae10c93d128952d457dc392adab4dfd172106b4b37fe21bbceffe50df563c",
+      "source_sha256": "a76ae10c93d128952d457dc392adab4dfd172106b4b37fe21bbceffe50df563c",
+      "matches_source": true
+    },
+    {
+      "name": "libcrypto-3.dll",
+      "source": "build-runtime/DLLs/libcrypto-3.dll",
+      "origin": "selected-python-runtime",
+      "sha256": "75495fe0e079ab00d49be740d3c710a0b94e3f74f9648cb7cc9f768fc7f52319",
+      "source_sha256": "75495fe0e079ab00d49be740d3c710a0b94e3f74f9648cb7cc9f768fc7f52319",
+      "matches_source": true
+    },
+    {
+      "name": "libffi-8.dll",
+      "source": "build-runtime/DLLs/libffi-8.dll",
+      "origin": "selected-python-runtime",
+      "sha256": "eff52743773eb550fcc6ce3efc37c85724502233b6b002a35496d828bd7b280a",
+      "source_sha256": "eff52743773eb550fcc6ce3efc37c85724502233b6b002a35496d828bd7b280a",
+      "matches_source": true
+    },
+    {
+      "name": "libssl-3.dll",
+      "source": "build-runtime/DLLs/libssl-3.dll",
+      "origin": "selected-python-runtime",
+      "sha256": "8957182a9c385bfd9f3f790921de2ddc614cf91f99edbed4e9e5446a46504e32",
+      "source_sha256": "8957182a9c385bfd9f3f790921de2ddc614cf91f99edbed4e9e5446a46504e32",
+      "matches_source": true
+    },
+    {
+      "name": "python313.dll",
+      "source": "build-runtime/python313.dll",
+      "origin": "selected-python-runtime",
+      "sha256": "26026530507a7389e7892ce130e7c1753b32a2df03ec3721d45ad8c1705d40eb",
+      "source_sha256": "26026530507a7389e7892ce130e7c1753b32a2df03ec3721d45ad8c1705d40eb",
+      "matches_source": true
+    },
+    {
+      "name": "select.pyd",
+      "source": "build-runtime/DLLs/select.pyd",
+      "origin": "selected-python-runtime",
+      "sha256": "f2b8f6008d9e8697700b73fd645a76d83e096e8214a6e31e644de32f56122f6a",
+      "source_sha256": "f2b8f6008d9e8697700b73fd645a76d83e096e8214a6e31e644de32f56122f6a",
+      "matches_source": true
+    },
+    {
+      "name": "sqlite3.dll",
+      "source": "build-runtime/DLLs/sqlite3.dll",
+      "origin": "selected-python-runtime",
+      "sha256": "ef18d4493faf4c0d0674fe472dc8eec246f4dd22043d851997a3e3e5c868e9b5",
+      "source_sha256": "ef18d4493faf4c0d0674fe472dc8eec246f4dd22043d851997a3e3e5c868e9b5",
+      "matches_source": true
+    },
+    {
+      "name": "tcl86t.dll",
+      "source": "build-runtime/DLLs/tcl86t.dll",
+      "origin": "selected-python-runtime",
+      "sha256": "a308beae8555cff5ac2aff7eaf0aef40b5fe173f047e246dc49da9a4d3ef62f9",
+      "source_sha256": "a308beae8555cff5ac2aff7eaf0aef40b5fe173f047e246dc49da9a4d3ef62f9",
+      "matches_source": true
+    },
+    {
+      "name": "tk86t.dll",
+      "source": "build-runtime/DLLs/tk86t.dll",
+      "origin": "selected-python-runtime",
+      "sha256": "20f4876506bce7f89e53570e64fd1dce30a64548326b45f372871c7019560df4",
+      "source_sha256": "20f4876506bce7f89e53570e64fd1dce30a64548326b45f372871c7019560df4",
+      "matches_source": true
+    },
+    {
+      "name": "unicodedata.pyd",
+      "source": "build-runtime/DLLs/unicodedata.pyd",
+      "origin": "selected-python-runtime",
+      "sha256": "541f46cf1ab49239b008a563eee6762086c7288f64631cb5cf59451cf22fc70c",
+      "source_sha256": "541f46cf1ab49239b008a563eee6762086c7288f64631cb5cf59451cf22fc70c",
+      "matches_source": true
+    },
+    {
+      "name": "zlib1.dll",
+      "source": "build-runtime/DLLs/zlib1.dll",
+      "origin": "selected-python-runtime",
+      "sha256": "1dd27f0411ebb31bd148a61589cee254410915f1e6c37aa3ffa52fac71a5426c",
+      "source_sha256": "1dd27f0411ebb31bd148a61589cee254410915f1e6c37aa3ffa52fac71a5426c",
+      "matches_source": true
+    }
+  ],
+  "unexpected_python_modules": [],
+  "runtime_hooks": [
+    {
+      "module": "pyi_rth_inspect",
+      "source": "build-runtime/Lib/site-packages/PyInstaller/hooks/rthooks/pyi_rth_inspect.py"
+    },
+    {
+      "module": "pyi_rth__tkinter",
+      "source": "build-runtime/Lib/site-packages/PyInstaller/hooks/rthooks/pyi_rth__tkinter.py"
+    }
+  ],
+  "application_code": [
+    {
+      "module": "app",
+      "path": "app.py",
+      "source_sha256": "d7448f5e2f68f5197293621f1ff127a0b0dd96ece51e32fad8f21ccd40c113be",
+      "compiled_code_matches": true
+    },
+    {
+      "module": "mailcairn",
+      "path": "mailcairn/__init__.py",
+      "source_sha256": "1fab26b8e66ea3873b84622ee2b812a6873fc77e44dc6c0ebb1848bfbac863a6",
+      "compiled_code_matches": true
+    },
+    {
+      "module": "mailcairn.instance",
+      "path": "mailcairn/instance.py",
+      "source_sha256": "ca6f92a124fff72a1345e423ba62675794fb38eeb8cb52d15268c5d68df493b2",
+      "compiled_code_matches": true
+    },
+    {
+      "module": "mailcairn.parse",
+      "path": "mailcairn/parse.py",
+      "source_sha256": "a46439316b90ab1671ddde6bcf5970b7d478f8a3137a50bb352a68c190b66a3c",
+      "compiled_code_matches": true
+    },
+    {
+      "module": "mailcairn.server",
+      "path": "mailcairn/server.py",
+      "source_sha256": "7b8539618212a6c5d9f878f708e6535b5d7337923e25cb0ce9ae7eebcff4cffa",
+      "compiled_code_matches": true
+    },
+    {
+      "module": "mailcairn.store",
+      "path": "mailcairn/store.py",
+      "source_sha256": "515c744c61910a15b7d27fad8b26b3a291b35780cbdddce49fbfbc234dedc048",
+      "compiled_code_matches": true
+    },
+    {
+      "module": "mailcairn.sync",
+      "path": "mailcairn/sync.py",
+      "source_sha256": "9f8c0f1ca55c3177ffa3814f7dc31ff7b3c5e48a8bdc7f41bc419a3058fee880",
+      "compiled_code_matches": true
+    },
+    {
+      "module": "mailcairn.credentials",
+      "path": "mailcairn/credentials.py",
+      "source_sha256": "49c60f36d12ea19beed05bf2c1ae524490f451c367358151bf4e78fe9b7932c6",
+      "compiled_code_matches": true
+    },
+    {
+      "module": "mailcairn.imap_client",
+      "path": "mailcairn/imap_client.py",
+      "source_sha256": "686cfbee618fac553c431a1171bf28c8d3789bd3f2136ab171498d99da847b8a",
+      "compiled_code_matches": true
+    },
+    {
+      "module": "desktop",
+      "path": "desktop.py",
+      "source_sha256": "dcef883a0861b4203a2409c51c7e118793808d9c102f61510bda2c05bb2fc7f5",
+      "compiled_code_matches": true
+    }
+  ],
+  "static_resources": [
+    {
+      "path": "mailcairn\\static\\app.js",
+      "present": true,
+      "matches_source": true,
+      "sha256": "74418b82e3c7b6f2349b817e3f40fd3b325444bb90a619527da6199aa64ae56b"
+    },
+    {
+      "path": "mailcairn\\static\\fonts\\HankenGrotesk-OFL.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "e02ccb89a86839b22feff7872ff5cc355cc0f58318d29eee20e2cf83a612f16d"
+    },
+    {
+      "path": "mailcairn\\static\\fonts\\HankenGrotesk.ttf",
+      "present": true,
+      "matches_source": true,
+      "sha256": "813b3f8fa0965405669a89b38e51bbefd95eef6b8e20d1cb2d8c10cce062662f"
+    },
+    {
+      "path": "mailcairn\\static\\fonts\\Newsreader-OFL.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "fdfad38143ec470553cae82a1e45320bdd1b9ec70415d37bd0171051d8a4ded8"
+    },
+    {
+      "path": "mailcairn\\static\\fonts\\Newsreader.ttf",
+      "present": true,
+      "matches_source": true,
+      "sha256": "8a08d13f8a6c0d51be379a60af84f945f65369a67e509ee3c3bdcc421254d7c1"
+    },
+    {
+      "path": "mailcairn\\static\\fonts.css",
+      "present": true,
+      "matches_source": true,
+      "sha256": "f1f25fa6bf642dbdc9af7e8b1366e20f9871a9795a3509c696743e15b1494343"
+    },
+    {
+      "path": "mailcairn\\static\\i18n.js",
+      "present": true,
+      "matches_source": true,
+      "sha256": "fcf4b984e049621da586e9996dbedeaccce41074cf8f1be479a42af530f75b45"
+    },
+    {
+      "path": "mailcairn\\static\\index.html",
+      "present": true,
+      "matches_source": true,
+      "sha256": "f5398f63d0c5ff885ad35677d75501623783c5655b2f387ac130ed9628307da6"
+    },
+    {
+      "path": "mailcairn\\static\\startup.js",
+      "present": true,
+      "matches_source": true,
+      "sha256": "2b5fd53adba55b7a58c784d5045578170da394b6bcfce117ee04ff1bd1e82b6b"
+    },
+    {
+      "path": "mailcairn\\static\\style.css",
+      "present": true,
+      "matches_source": true,
+      "sha256": "8cf2e277199312059fb795914bd83d2bc0febb36829c9bed927d5236041b567e"
+    }
+  ],
+  "desktop_notices": [
+    {
+      "file": "Apache-2.0.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "file": "Expat-COPYING.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87"
+    },
+    {
+      "file": "HACL-source-notice.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "998ce04fb8ad9dedb0bc1b44938f8c3dcf1089780fa105ce1c8c30fb5554d78c"
+    },
+    {
+      "file": "manifest.json",
+      "present": true,
+      "matches_source": true,
+      "sha256": "dc63d8aba90563dc80b07710d3148381f7265958b7c10918c54ef27a628e9533"
+    },
+    {
+      "file": "mimalloc-source-notice.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "5c43118a1543d62bb0c2103e69182a2c995968b75c37472bae6754bd7c295a7b"
+    },
+    {
+      "file": "mpdecimal-source-notice.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "b07528d8b1dbf1e2d2741052996f0876e23342ce2d30d0effa39c5457716c25a"
+    },
+    {
+      "file": "OpenSSL-LICENSE.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    {
+      "file": "PyInstaller-COPYING.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "dcf75fdb959db1e3b41c0f8505069d2ece781b5ec6b3d0a4d30975cfc6580245"
+    },
+    {
+      "file": "PyInstaller-hooks-contrib-LICENSE.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "91d0baaff00773038e72c0a1fc9d5d2d38706b7a2b9c04f34296608f931b9cd0"
+    },
+    {
+      "file": "PyInstaller-runtime-hook-notices.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "34af72a7fd670696f8edeb5fb0a56e3e2f260244f8e3a33eb6630703f5467e80"
+    },
+    {
+      "file": "Python-build-version-provenance.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "022e29594aa3a2cc5ebc325529eb7c520bbb1a0c3706bba504217833334a9c7b"
+    },
+    {
+      "file": "Python-incorporated-software-notices.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "952ac05720d7f1dcb63589b35eb0931b1442eb250230a4ad31198eddf0ad6abc"
+    },
+    {
+      "file": "Python-Windows-LICENSE.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "62bec384df47b0328307db41455ff6ea2559e5546b394ac69148561b21703120"
+    },
+    {
+      "file": "README.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "0727516764ed30df680673c4ebfc9ee737b136873458e4d7078518c902fb5f15"
+    },
+    {
+      "file": "SQLite-public-domain.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "a7a58d6022c090c528e3167026167b3141d682efc6a3c188b473ba59f1788fc7"
+    },
+    {
+      "file": "Tcl-LibTomMath-LICENSE.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "2fa64b163659f41965c9815882a8296d3d03ff546b76153e11445f9bdecf955a"
+    },
+    {
+      "file": "Tcl-LICENSE.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "c0a69a2bfd757361ec7e6143973b103c90409316b49e9c88db26ad6388e79f16"
+    },
+    {
+      "file": "Tcl-regex-source-notice.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "6d72f48f5f851ee6b39537d9ce4ee31e354956fb51b563f290e250bdb4304861"
+    },
+    {
+      "file": "Tk-LICENSE.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "2cde822b93ca16ae535c954b7dfe658b4ad10df2a193628d1b358f1765e8b198"
+    },
+    {
+      "file": "XZ-COPYING.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "bcb02973ef6e87ea73d331b3a80df7748407f17efdb784b61b47e0e610d3bb5c"
+    },
+    {
+      "file": "zlib-LICENSE.txt",
+      "present": true,
+      "matches_source": true,
+      "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243"
+    }
+  ],
+  "project_notices": [
+    {
+      "file": "LICENSE",
+      "present": true,
+      "matches_source": true,
+      "sha256": "ffcca38841adb694b6f380647e15f17c446a4d1656fed51a1e2041d064c94cc8"
+    },
+    {
+      "file": "NOTICE",
+      "present": true,
+      "matches_source": true,
+      "sha256": "b05d577982d525e08a3684a1c59cc9ce23298511d9711738627ab2932be0e4d7"
+    },
+    {
+      "file": "COMMERCIAL.md",
+      "present": true,
+      "matches_source": true,
+      "sha256": "aeb45cc7dd1c5ffb3a1c1b02ef2813ccbd3901138b717250f7b5a1c896f4d672"
+    }
+  ],
+  "status": "PASS: artifact native origins, current app code, static resources and licenses match reviewed inputs",
+  "scope": "Static artifact/TOC/hash/code reconciliation only. Current binary UI launch, clean-machine, signing and public release require separate evidence.",
+  "installer": {
+    "url": "https://www.python.org/ftp/python/3.13.17/python-3.13.17-amd64.exe",
+    "sha256": "5da012101ba2e17113a9a1cd901e9ce1441086f2b7ecb5de06ec94163899a190",
+    "authenticode": "Lead agent reported Valid; independent signature check not performed in this artifact inspection"
+  },
+  "previous_candidate": {
+    "artifact": "desktop-build/dist/MailCairn",
+    "exe_sha256": "2aa78758f6796d58a404595307d91dca2918c486cb2bf5774337ec0441bef16e",
+    "rejected_findings": [
+      "43 API-set/UCRT DLLs were collected from Codex libheif cache through ambient PATH",
+      "mailcairn.parse was stale relative to subsequent source fix"
+    ]
+  }
+}

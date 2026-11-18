@@ -1,0 +1,40 @@
+{
+  "fixture": "Synthetic text-only emails; no attachments; not a real mailbox benchmark",
+  "python": "3.13.1",
+  "sqlite": "3.45.3",
+  "platform": "Windows",
+  "architecture": "AMD64",
+  "messages_requested": 10000,
+  "body_bytes_requested": 10000,
+  "source_bytes": 103084670,
+  "archive_bytes": 230932480,
+  "import_status": "complete",
+  "added": 10000,
+  "skipped": 0,
+  "import_seconds": 131.031,
+  "messages_per_second": 76.32,
+  "searches": [
+    {
+      "seconds": 0.005767800000285206,
+      "matches": 1
+    },
+    {
+      "seconds": 0.0036130999997112667,
+      "matches": 1
+    },
+    {
+      "seconds": 0.0033643000001575274,
+      "matches": 1
+    }
+  ],
+  "verification_seconds": 1.103,
+  "verification": {
+    "checked": 10000,
+    "mismatches": [],
+    "sqlite": "ok",
+    "search_index": "ok"
+  },
+  "peak_memory_bytes": 30461952,
+  "peak_memory_method": "Windows peak process working set",
+  "limits": "Synthetic text only; does not establish 20 GiB performance or attachment-heavy archive performance."
+}

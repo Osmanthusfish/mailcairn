@@ -1,0 +1,146 @@
+{
+  "version": "0.1.0-alpha.2",
+  "timestamp_utc": "2026-11-10T08:21:58.286515+00:00",
+  "published": false,
+  "python_regression": {
+    "passed": 177,
+    "seconds": 35.829
+  },
+  "javascript_checks": {
+    "frontend": 40,
+    "i18n": 15,
+    "connections": 24,
+    "total": 79
+  },
+  "changes": [
+    "LOGIN connection abort classified as network, not authentication",
+    "last successful sync labeled explicitly; partial attempt counts hidden",
+    "retry guidance limited to active recognized network errors with credentials",
+    "loaded unpaused connections queued; paused state retained"
+  ],
+  "browser": {
+    "synthetic": true,
+    "network_failure_retains_saved_count": true,
+    "pause_removes_retry_hint": true,
+    "authentication_failure_distinct": true,
+    "recovered": {
+      "saved": "2",
+      "status": "Up to date",
+      "error": false,
+      "retry": false,
+      "overflow": false
+    },
+    "new_message_opened": true,
+    "viewports": [
+      "1440x960 zh-CN",
+      "390x844 en"
+    ],
+    "screenshots_visually_reviewed": true,
+    "screenshots": [
+      "screenshots/alpha2-network-error-zh.png",
+      "screenshots/alpha2-network-error-en-mobile.png"
+    ],
+    "harness_notes": "Two wait expectations used an incorrect status/selector; later snapshots and corrected checks verified actual successful UI states."
+  },
+  "http_smoke": {
+    "source-smoke": {
+      "status": "passed",
+      "timestamp_utc": "2026-11-10T08:19:01.420891+00:00",
+      "checks": [
+        "authentication_and_empty_archive_guard",
+        "host_origin_and_mutation_guards",
+        "version_and_bundled_assets",
+        "mbox_import_search_body_raw_attachment_and_receipt",
+        "duplicate_mbox_escaping_and_unchanged_export_roundtrip",
+        "invalid_files_and_recovery",
+        "archive_integrity",
+        "source_restore_no_overwrite_and_restored_http_readback"
+      ],
+      "mode": "source_http_helper",
+      "restore_mode": "extracted_source_helper_http",
+      "limitations": [
+        "Not a clean-machine test",
+        "Native Restore dialog not exercised",
+        "Source helper does not exercise app.py or desktop startup",
+        "MBOX export quotes From-lines; EML and backup preserve exact raw bytes"
+      ],
+      "version": {
+        "expected": "0.1.0-alpha.2",
+        "http_server": "MailCairn/0.1.0-alpha.2",
+        "visible_page": true
+      },
+      "synthetic": {
+        "messages": 2,
+        "attachment_bytes": 303,
+        "mbox_sha256": "50c923abf0c7746e3ba7987bceebd4c5df0d630c558bc81a1d384fd06efea5ad",
+        "backup_bytes": 45056
+      }
+    },
+    "binary-smoke": {
+      "status": "passed",
+      "timestamp_utc": "2026-11-10T08:19:19.964217+00:00",
+      "checks": [
+        "authentication_and_empty_archive_guard",
+        "host_origin_and_mutation_guards",
+        "version_and_bundled_assets",
+        "mbox_import_search_body_raw_attachment_and_receipt",
+        "duplicate_mbox_escaping_and_unchanged_export_roundtrip",
+        "invalid_files_and_recovery",
+        "archive_integrity",
+        "source_restore_no_overwrite_and_restored_http_readback"
+      ],
+      "mode": "running_instance",
+      "restore_mode": "extracted_source_helper_http",
+      "limitations": [
+        "Not a clean-machine test",
+        "Native Restore dialog not exercised",
+        "Source helper does not exercise app.py or desktop startup",
+        "MBOX export quotes From-lines; EML and backup preserve exact raw bytes"
+      ],
+      "version": {
+        "expected": "0.1.0-alpha.2",
+        "http_server": "MailCairn/0.1.0-alpha.2",
+        "visible_page": true
+      },
+      "synthetic": {
+        "messages": 2,
+        "attachment_bytes": 303,
+        "mbox_sha256": "50c923abf0c7746e3ba7987bceebd4c5df0d630c558bc81a1d384fd06efea5ad",
+        "backup_bytes": 45056
+      }
+    }
+  },
+  "build_audit": {
+    "file": "desktop-build-alpha2.json",
+    "exe_sha256": "48946dbf878d66927705bc51c81530dc5855e1cbb25c234023d96c39c1f29e4e"
+  },
+  "real_provider_status": {
+    "evidence": "gmail-live-evidence.json",
+    "initial_gmail_messages": 120,
+    "automatic_new_arrival": "unresolved TLS connection failure",
+    "new_live_network_probes_this_iteration": false,
+    "proxy_settings_changed": false,
+    "paid_proton_bridge": "not tested"
+  },
+  "limitations": [
+    "Synthetic recovery does not prove the real Gmail route has recovered",
+    "Native Restore dialog and source CMD not re-exercised in this iteration",
+    "No clean second-machine test",
+    "Unsigned Windows build",
+    "No external upload"
+  ],
+  "packaging": {
+    "source_files": 150,
+    "binary_files": 1141,
+    "verified": [
+      "source release boundary",
+      "ZIP CRC and all packaged bytes reopened",
+      "packaged source equals checked source",
+      "tested code unchanged",
+      "runtime unchanged from tested EXE",
+      "scoped OS username and workspace path byte scan"
+    ],
+    "checksums": "See the Alpha 2 deliverable .sha256 files and ALPHA2-ARTIFACTS.json",
+    "scope": "Finite release-boundary and byte-pattern checks, not a general security audit"
+  }
+}

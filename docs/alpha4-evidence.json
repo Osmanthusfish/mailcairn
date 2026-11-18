@@ -1,0 +1,68 @@
+{
+  "version": "0.1.0-alpha.4",
+  "timestamp_utc": "2026-11-10T09:02:32.302905+00:00",
+  "published": false,
+  "issue": "A previously saved desktop port was in a Windows TCP excluded range; bind failed with WinError 10013 despite no listener.",
+  "local_diagnosis": {
+    "saved_port_bind": "WinError 10013",
+    "os_assigned_loopback_bind": "passed",
+    "network_settings_changed": false
+  },
+  "fix": {
+    "fallback": "One OS-assigned 127.0.0.1 port on EADDRINUSE or WinError 10048/10013",
+    "persist_actual_port": true,
+    "exclusive_binding_retained": true,
+    "no_tcp_connection_probe": true,
+    "generic_permission_errors_propagate": true,
+    "second_bind_failure_releases_archive_lock": true
+  },
+  "targeted_tests": {
+    "modules": [
+      "tests.test_desktop",
+      "tests.test_instance"
+    ],
+    "passed": 32,
+    "seconds": 6.197
+  },
+  "executed": {
+    "real_exe_reserved_port_fallback": true,
+    "real_exe_normal_restart_same_port": true,
+    "stable_workspace_launcher_updated": true,
+    "actual_user_default_archive_health": true,
+    "actual_user_version": "MailCairn/0.1.0-alpha.4",
+    "private_message_contents_read": false,
+    "user_application_left_running": true,
+    "only_own_synthetic_controller_closed": true
+  },
+  "build_audit": {
+    "file": "desktop-build-alpha4.json",
+    "exe_sha256": "4d6d8654eeabeea2f4f5892288a23f1231e4890f90ca6ce4725ff804cb912e6a"
+  },
+  "scope": [
+    "Desktop local-listener startup fix only; explicitly configured CLI port behavior unchanged",
+    "No firewall, exclusions, adapters, proxy, VPN, elevated-user launch or mailbox credential changes",
+    "No reader optimization included; prior Alpha 3 full regressions and workflows remain historical",
+    "No new Gmail/Proton synchronization or clean-machine acceptance claim"
+  ],
+  "remaining": [
+    "User visual acceptance",
+    "Real Gmail automatic new arrival and recovery",
+    "Paid Proton Bridge",
+    "Second clean Windows computer",
+    "Signing and external distribution review",
+    "Explicit upload authorization"
+  ],
+  "packaging": {
+    "source_files": 160,
+    "binary_files": 1151,
+    "checks": [
+      "source release boundary",
+      "ZIP CRC and all member bytes reopened",
+      "checked source equality",
+      "business code unchanged from Alpha 3; targeted startup tests and actual launch passed; runtime matches audited build",
+      "scoped username and workspace path byte scan"
+    ],
+    "checksums": "Alpha 4 .sha256 files and ALPHA4-ARTIFACTS.json in deliverables",
+    "scope": "Finite byte-pattern and release-boundary checks; not an independent security audit"
+  }
+}

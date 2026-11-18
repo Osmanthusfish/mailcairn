@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-09",
+  "python_tests": 123,
+  "frontend_checks": 28,
+  "i18n_checks": 14,
+  "real_proton_single_message": {
+    "imported": 1,
+    "raw_roundtrip_equal": true,
+    "attachment_payloads_equal": 10,
+    "backup_restore_pass": true,
+    "readable_html_lines": 37
+  },
+  "native_desktop": {
+    "native_restore_picker": true,
+    "native_open_folder_picker": true,
+    "messages": 6,
+    "restored_raw_equal": true,
+    "original_raw_unchanged": true,
+    "sqlite_integrity": "ok",
+    "native_close_and_restart": true,
+    "lang": "en",
+    "rows": 6,
+    "samePort": true,
+    "languagePreserved": true
+  },
+  "limitations": [
+    "Gmail actual export untested",
+    "Proton bulk CLI export untested",
+    "Native browser directory picker transport unverified",
+    "Unsigned Windows64 candidate; no clean second-machine validation",
+    "User visual acceptance pending"
+  ]
+}

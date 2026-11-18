@@ -1,0 +1,280 @@
+{
+  "date": "2026-11-09",
+  "scope": "Simplified bilingual mailbox setup, in-app guide, hover-return paper geometry and Windows entry scripts. Synthetic mail only.",
+  "checks": {
+    "frontend": 40,
+    "i18n": 15,
+    "connections": 20,
+    "backend_suite": "Prior 163-pass baseline; unchanged backend, not rerun this UI iteration"
+  },
+  "setup": {
+    "gmail_hides_server_and_port": true,
+    "proton_optional_port_collapsed": true,
+    "custom_provider_required_server_kept": true,
+    "guide_opens_selected_provider_and_clears_secret": true,
+    "invalid_hidden_port_revealed": true,
+    "real_synthetic_TLS_import": "0 to 1, list and raw reader body confirmed"
+  },
+  "geometry": {
+    "css_sha256": "f87bd455ac4652b7494a717e2a18d1a15101a035c57ab43025cada6eb59c7acf",
+    "sheet_size_px": [
+      225.0,
+      286.0
+    ],
+    "origin_fraction": [
+      0.5,
+      0.9
+    ],
+    "samples": 1001,
+    "transition": "transform .55s var(--ease-paper),box-shadow .55s",
+    "rest_transforms": {
+      "far": [
+        -0.28,
+        10.0,
+        2.0,
+        24.0,
+        -6.0
+      ],
+      "under": [
+        -0.35,
+        -21.0,
+        18.0,
+        14.0,
+        -4.0
+      ],
+      "middle": [
+        -0.57,
+        -23.0,
+        38.0,
+        -4.0,
+        -5.0
+      ],
+      "main": [
+        -0.65,
+        -8.0,
+        64.0,
+        -16.0,
+        -4.0
+      ]
+    },
+    "hover_transforms": {
+      "far": [
+        -0.28,
+        10.0,
+        2.0,
+        24.0,
+        -6.0
+      ],
+      "under": [
+        -0.31,
+        -28.0,
+        25.0,
+        17.0,
+        -7.0
+      ],
+      "middle": [
+        -0.57,
+        -23.0,
+        38.0,
+        -4.0,
+        -5.0
+      ],
+      "main": [
+        -0.69,
+        -16.0,
+        78.0,
+        -19.0,
+        -7.0
+      ]
+    },
+    "minimum_overlap_clearance": {
+      "far -> under": {
+        "clearance_px": 4.327954,
+        "progress": 0.0
+      },
+      "far -> middle": {
+        "clearance_px": 28.868872,
+        "progress": 0.0
+      },
+      "far -> main": {
+        "clearance_px": 54.330866,
+        "progress": 0.0
+      },
+      "under -> middle": {
+        "clearance_px": 3.845532,
+        "progress": 1.0
+      },
+      "under -> main": {
+        "clearance_px": 43.823265,
+        "progress": 0.0
+      },
+      "middle -> main": {
+        "clearance_px": 21.20519,
+        "progress": 0.0
+      }
+    },
+    "legacy_far_minus_8deg_comparison": {
+      "far -> under": {
+        "clearance_px": -4.667323,
+        "progress": 0.0
+      },
+      "far -> middle": {
+        "clearance_px": 19.842848,
+        "progress": 0.0
+      },
+      "far -> main": {
+        "clearance_px": 47.515946,
+        "progress": 0.0
+      },
+      "under -> middle": {
+        "clearance_px": 3.845532,
+        "progress": 1.0
+      },
+      "under -> main": {
+        "clearance_px": 43.823265,
+        "progress": 0.0
+      },
+      "middle -> main": {
+        "clearance_px": 21.20519,
+        "progress": 0.0
+      }
+    },
+    "entrance_endpoints_equal_rest": {
+      "far": true,
+      "under": true,
+      "middle": true,
+      "front": true
+    },
+    "passed": true,
+    "scope": "Local model-plane clearance over hover/return; browser rendering and entrance trajectories require browser QA."
+  },
+  "browser_frames": {
+    "transitions": [
+      {
+        "property": "transform",
+        "duration": 400
+      },
+      {
+        "property": "transform",
+        "duration": 550
+      },
+      {
+        "property": "box-shadow",
+        "duration": 550
+      },
+      {
+        "property": "transform",
+        "duration": 550
+      }
+    ],
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "samples": [
+      0,
+      100,
+      250,
+      400,
+      550,
+      700
+    ]
+  },
+  "final_motion": {
+    "rapidRestSettled": true,
+    "reducedMotionTransformsUnchanged": true,
+    "narrow": {
+      "width": 320,
+      "overflow": false,
+      "sheets": 4
+    }
+  },
+  "layout": [
+    {
+      "label": "gmail-zh-1440",
+      "width": 1440,
+      "lang": "zh-CN",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "label": "gmail-en-1440",
+      "width": 1440,
+      "lang": "en",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "label": "proton-zh-390",
+      "width": 390,
+      "lang": "zh-CN",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "label": "guide-proton-zh-390",
+      "width": 390,
+      "lang": "zh-CN",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "label": "other-zh-320",
+      "width": 320,
+      "lang": "zh-CN",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "label": "other-advanced-zh-320",
+      "width": 320,
+      "lang": "zh-CN",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "label": "guide-other-zh-320",
+      "width": 320,
+      "lang": "zh-CN",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "label": "guide-dark-en-1440",
+      "width": 1440,
+      "lang": "en",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "label": "setup-dark-en-1440",
+      "width": 1440,
+      "lang": "en",
+      "overflow": false,
+      "violations": []
+    }
+  ],
+  "launchers": [
+    {
+      "script": "Start-MailCairn.cmd",
+      "source_error_visible": true,
+      "nonzero_exit": 1,
+      "foreign_working_directory": true
+    },
+    {
+      "script": "Start-MailCairn-Desktop.cmd",
+      "source_error_visible": true,
+      "nonzero_exit": 1,
+      "foreign_working_directory": true
+    }
+  ],
+  "launch_entry": "workspace/Open-MailCairn.cmd",
+  "runtime_entry_check": "Start-MailCairn.cmd without arguments launched current packaged EXE; authenticated sync API returned200. Source archive and its legacy process were not altered.",
+  "limits": [
+    "Not a real Gmail or Proton account test",
+    "Proton Free access remains unsupported by this connector",
+    "No physical mobile device or screen-reader certification",
+    "Geometry calculation covers hover/return, not the entire entrance trajectory"
+  ],
+  "publication": "Local candidate update only; no GitHub upload"
+}

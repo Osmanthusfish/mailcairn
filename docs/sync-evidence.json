@@ -1,0 +1,121 @@
+{
+  "date": "2026-11-09",
+  "scope": "Synthetic local STARTTLS IMAP wire and actual Windows package; not a real provider-account authentication test.",
+  "automated": {
+    "python_tests": 163,
+    "python_seconds": 27.883,
+    "frontend_checks": 40,
+    "i18n_checks": 15,
+    "connection_ui_checks": 16,
+    "remote_CI_run": false
+  },
+  "wire_and_backup": {
+    "readonly_wire": true,
+    "all_login_after_TLS": true,
+    "default_poll_gap_seconds": 300.364,
+    "original_raw_identical": true,
+    "restored_messages": 3,
+    "backup_excludes_connection_sidecars": true,
+    "no_plaintext_synthetic_password_on_disk": true,
+    "original_sha256": "ca9cd6f8cfdc9e694d7a585ca701463c6fbba8a8e0eb38816652482e03fb7252"
+  },
+  "automatic_arrival": {
+    "before": 1,
+    "after": 2,
+    "manual_sync_clicked": false,
+    "configured_interval_seconds": 300,
+    "reader_selection_retained": true,
+    "filter_preservation": "covered by persisted JS regression"
+  },
+  "lifecycle": {
+    "duplicate_uid_raw_deduplicated": true,
+    "source_deletion_retained_locally": true,
+    "pause_resume_passed": true,
+    "disconnect_retained_3_messages": true,
+    "wrong_password_localized_then_reconnect_passed": true
+  },
+  "packaged": {
+    "protected_credentials": true,
+    "restart_without_password": true,
+    "same_port": true,
+    "last_uid": 5,
+    "message_count_after_restart": 4,
+    "same_tab_session_link_fixed_and_passed": true,
+    "shutdown_type": "controlled process termination of synthetic test only; normal desktop-close behavior covered by regression and prior native test"
+  },
+  "layout": [
+    {
+      "label": "connections-zh-1440",
+      "width": 1440,
+      "lang": "zh-CN",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "label": "gmail-en-1440",
+      "width": 1440,
+      "lang": "en",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "label": "proton-zh-390",
+      "width": 390,
+      "lang": "zh-CN",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "label": "imap-zh-320",
+      "width": 320,
+      "lang": "zh-CN",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "label": "connections-zh-320",
+      "width": 320,
+      "lang": "zh-CN",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "label": "connections-dark-zh-1440",
+      "width": 1440,
+      "lang": "zh-CN",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "label": "packaged-connections-en-1077",
+      "width": 1077,
+      "lang": "en",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "label": "final-imap-zh-320",
+      "width": 320,
+      "lang": "zh-CN",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "label": "final-connections-zh-320",
+      "width": 320,
+      "lang": "zh-CN",
+      "overflow": false,
+      "violations": []
+    }
+  ],
+  "screenshots": "Only synthetic addresses/messages. No real Proton account capture.",
+  "limits": [
+    "Gmail/paid Proton Bridge real account sync not tested",
+    "Proton Free unsupported by implemented official Bridge route",
+    "INBOX UI scope only; app must run",
+    "Initial network catch-up throughput not benchmarked",
+    "Unsigned Windows candidate; no second clean machine"
+  ],
+  "artifact": "../deliverables/MailCairn-Windows-sync-review/MailCairn.exe",
+  "public_upload": false
+}

@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-09",
+  "status": "local candidate; user visual acceptance pending; unpublished",
+  "python_tests": {
+    "count": 76,
+    "seconds": 9.453
+  },
+  "frontend_checks": 25,
+  "source_sha256": {
+    "mailcairn/static/index.html": "019fd8c4528771972aeebb6352ad215313b286008278ebf1c958fd4c8625d525",
+    "mailcairn/static/app.js": "471ef4f0e5553fcd9013a7ac1577b389659214d56eabba8923b9f536a67de9fe",
+    "mailcairn/static/style.css": "b71a5fa6fecadb139cd9ef602331793eea37d6663d1adc5502ce15836713b8ba",
+    "mailcairn/static/fonts.css": "f1f25fa6bf642dbdc9af7e8b1366e20f9871a9795a3509c696743e15b1494343",
+    "mailcairn/server.py": "a1af218378973a305ecb483a5ba5c7e03f22f1d585101fda1c076f06b9800573",
+    "scripts/check_frontend.mjs": "8dc0f3ef0700fa0d24aeceef22c2211edf32c9da3ff507a3e64b3514d1a7f5b3",
+    "tests/test_http.py": "7d40d2f4f2fd764c2c7246a7320810e2412a536c2c29f496a1508fc0dbe84021"
+  },
+  "fonts": [
+    {
+      "file": "HankenGrotesk.ttf",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/hankengrotesk/HankenGrotesk%5Bwght%5D.ttf",
+      "bytes": 132892,
+      "sha256": "813b3f8fa0965405669a89b38e51bbefd95eef6b8e20d1cb2d8c10cce062662f"
+    },
+    {
+      "file": "HankenGrotesk-OFL.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/hankengrotesk/OFL.txt",
+      "bytes": 4402,
+      "sha256": "e02ccb89a86839b22feff7872ff5cc355cc0f58318d29eee20e2cf83a612f16d"
+    },
+    {
+      "file": "Newsreader.ttf",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/Newsreader%5Bopsz%2Cwght%5D.ttf",
+      "bytes": 451664,
+      "sha256": "8a08d13f8a6c0d51be379a60af84f945f65369a67e509ee3c3bdcc421254d7c1"
+    },
+    {
+      "file": "Newsreader-OFL.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/OFL.txt",
+      "bytes": 4394,
+      "sha256": "fdfad38143ec470553cae82a1e45320bdd1b9ec70415d37bd0171051d8a4ded8"
+    }
+  ],
+  "browser": {
+    "focus": {
+      "outline": "none",
+      "wrapShadow": "rgb(212, 208, 194) 0px -1px 0px 0px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "inputShadow": "none",
+      "listOverflow": "hidden"
+    },
+    "readerLight": [],
+    "preferencesDark": [],
+    "readerDark": [],
+    "narrow": {
+      "overflow": false,
+      "audit": []
+    },
+    "reduced": {
+      "animations": 0,
+      "readerOpening": false
+    },
+    "forcedFocus": {
+      "tag": "BUTTON",
+      "visible": true,
+      "outline": "rgb(55, 0, 110) solid 2px"
+    },
+    "readerLight_note": "Retested after removing result entrance opacity fade; the first audit caught transient low contrast. Final text stays opaque during motion."
+  },
+  "motion_and_import": {
+    "pointer": {
+      "x": "1.8deg",
+      "y": "3.9000000000000004deg"
+    },
+    "reduced": {
+      "running": 0
+    },
+    "reader": {
+      "traces": [
+        {
+          "duration": 420,
+          "first": {
+            "transform": "perspective(1400px) translateX(-12px) rotateY(-19deg)",
+            "transformOrigin": "0px 245.59896087646484px"
+          },
+          "at": 138464.09999999963
+        }
+      ],
+      "title": "A slow Sunday lunch?",
+      "remaining": 0
+    },
+    "duplicate": "sample.mboxImport complete 路 0 added 路 20 duplicates 路 0 not importedView receipt 鈫桞rowse mail"
+  },
+  "narrow_navigation": {
+    "selected": {
+      "scrollY": 581.3333129882812,
+      "readerTop": -0.15625,
+      "bodyTop": 346.0833435058594,
+      "focus": "text-button reader-back",
+      "overflow": false
+    },
+    "returned": {
+      "scrollY": 0,
+      "listVisible": true,
+      "selectedFocus": true
+    }
+  }
+}
