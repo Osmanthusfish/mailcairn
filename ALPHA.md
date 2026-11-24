@@ -1,12 +1,12 @@
-# Alpha 0.1.0-alpha.9 — internal candidate
+# Alpha 0.1.0-alpha.9 — public preview
 
-Prepared on 2026-11-18 (`0.1.0-alpha.9`). Packages are `MailCairn-0.1.0-alpha.9-windows-x64.zip` and `MailCairn-0.1.0-alpha.9-source.zip`; match them to `ALPHA9-ARTIFACTS.json` and `.sha256`. EXE SHA-256: `54181677c6dd415191c7f7bb46737d33cf17ec574094eff81c9775bc08188a35`.
+Published on 2026-11-18 as a [GitHub pre-release](https://github.com/Osmanthusfish/mailcairn/releases/tag/v0.1.0-alpha.9) with Windows and source ZIPs and their SHA-256 checksums. EXE SHA-256: `54181677c6dd415191c7f7bb46737d33cf17ec574094eff81c9775bc08188a35`.
 
 Alpha.9 completes pre-publication polish: case-insensitive single-key shortcuts (`I`/`G`/`H` work under Caps Lock) with bilingual `,` Reading room help copy, desktop `Restore backup…` / `恢复备份…` guidance alongside the CLI command in Getting started Step 04, `white-space: nowrap` on `.language-option` pills, a 20-second IMAP socket timeout (`NETWORK_TIMEOUT = 20`), streamlined English/Chinese README front-door presentation, CI command parity, zero broken markdown links, and removal of 19 unreferenced historical process screenshots (~2.98 MiB).
 
 202 Python tests (`-W error::RuntimeWarning`) and 66/31/19/11 frontend/connection/bilingual/startup checks passed; bundle audit and eight synthetic actual-EXE HTTP workflow groups passed; ego-browser against the actual Alpha.9 EXE verified uppercase/comma shortcuts, bilingual shortcut and Step 04 backup restore copy, and 320×568 single-line language pills. Exact scope is in [test results](docs/test-results.md) and [Alpha.9 evidence](docs/alpha9-evidence.json). Native pickers were not reaccepted on this build. Real Gmail automatic-arrival TLS recovery, paid Bridge, a clean second machine, low-end hardware, screen readers and owner visual approval remain outstanding.
 
-中文：alpha.9 为发布前体验与门面打磨候选（未上传）。补齐单键快捷键大小写兼容与 `,` 阅读设置双语提示、使用指南第04步桌面“恢复备份…”说明、语言按钮 `nowrap` 防折行、IMAP 20秒超时、README首屏精简及清理19张无引用历史过程图（减重约2.98MB）。202项Python、66／31／19／11项Node回归、构建审计、实际EXE八组HTTP与Ego真机验证均通过。原生窗口重测、真实Gmail后续新信、第二台电脑与视觉认可仍待完成。
+中文：Alpha.9 已在 GitHub 发布为公开预览版。补齐单键快捷键大小写兼容与 `,` 阅读设置双语提示、使用指南第04步桌面“恢复备份…”说明、语言按钮 `nowrap` 防折行、IMAP 20秒超时、README首屏精简及清理19张无引用历史过程图（减重约2.98MB）。202项Python、66／31／19／11项Node回归、构建审计、实际EXE八组HTTP与Ego真机验证均通过。原生窗口重测、真实Gmail后续新信、第二台电脑与视觉认可仍待完成。
 
 ---
 

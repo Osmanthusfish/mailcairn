@@ -6,6 +6,8 @@
 
 MailCairn preserves your email in a single persistent SQLite archive on your machine. Import extracted `.mbox` or `.eml` files with no account setup, or connect a supported mailbox to archive new INBOX mail automatically while the app runs. Search subjects, people, message bodies and attachment names, read mail as safe inert plain text, recover original `.eml` messages and attachments, and verify stored archive hashes. No Docker, hosted service, Node.js runtime or AI model is required.
 
+[**Download for Windows (64-bit)**](https://github.com/Osmanthusfish/mailcairn/releases/download/v0.1.0-alpha.9/MailCairn-0.1.0-alpha.9-windows-x64.zip) · [Download source ZIP](https://github.com/Osmanthusfish/mailcairn/releases/download/v0.1.0-alpha.9/MailCairn-0.1.0-alpha.9-source.zip) · [Release notes and SHA-256 checksums](https://github.com/Osmanthusfish/mailcairn/releases/tag/v0.1.0-alpha.9)
+
 [Architecture](docs/architecture.md) · [Verification report](docs/test-results.md) · [Research & sources](docs/market-research.md) · [License](LICENSE)
 
 ![Alpha.5 reader after its entrance animation, displaying only public synthetic mail](docs/screenshots/alpha5-reader-en.png)
@@ -18,7 +20,7 @@ MailCairn preserves your email in a single persistent SQLite archive on your mac
 
 1. Extract **all** of `MailCairn-0.1.0-alpha.9-windows-x64.zip` into a folder you choose. Do not run it inside the ZIP or copy only the EXE.
 2. Open that folder and double-click **MailCairn.exe**. Keep its control window open; your archive opens in the browser. The package includes Python **3.13.17**.
-3. Choose **Connect mailbox** or **Import file**. Mailbox instructions are built into **Getting started → Connect a mailbox**.
+3. Choose **Import file** to add your exported mail. For automatic archiving, see **Getting started → Connect a mailbox**.
 
 No source checkout, development folder or previous installation is needed. The default archive is `%LOCALAPPDATA%/MailCairn/archive.sqlite3`. **Restore backup…** validates a backup into a new folder; **Open archive folder…** reopens an archive. Quit an older MailCairn version normally before starting this release; refreshing its browser tab does not upgrade its backend. The executable is unsigned. Runtime contents and licenses are listed in the [desktop audit](docs/desktop-dependencies.md) and [bundled notices](licenses/desktop/README.txt).
 

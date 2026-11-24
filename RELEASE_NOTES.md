@@ -2,9 +2,9 @@
 
 Single-key navigation shortcuts (`i`, `g`, `h`) now work case-insensitively (such as under Caps Lock), and the Reading room toggle explicitly documents `,` for opening Reading room in English and Simplified Chinese. Getting started Step 04 now explains restoring backups through the Windows desktop window (`Restore backup…` / `恢复备份…`) ahead of the source CLI command. Language pills enforce `white-space: nowrap` in narrow headers and dialogs, `IMAPClient` uses a 20-second socket timeout (`NETWORK_TIMEOUT = 20`), and `LocalServer.server_bind` avoids reverse-DNS `getfqdn` stalls on macOS loopback bindings. English and Simplified Chinese READMEs were streamlined for repository visitors, development commands match CI, relative historical links were repaired, and 19 unreferenced historical screenshots (~2.98 MiB) were removed from the source package.
 
-202 Python tests, 66/31/19/11 Node checks, bundle reconciliation, eight actual-EXE HTTP groups and ego-browser shortcut/guide/320px pill checks passed. See [dated evidence](docs/alpha9-evidence.json) and [test results](docs/test-results.md) for exact scope. Still unsigned, local and unpublished; real Gmail automatic-arrival TLS failure and other known limits remain. Checksums belong to `ALPHA9-ARTIFACTS.json` and `.sha256` beside the matching packages.
+202 Python tests, 66/31/19/11 Node checks, bundle reconciliation, eight actual-EXE HTTP groups and ego-browser shortcut/guide/320px pill checks passed. See [dated evidence](docs/alpha9-evidence.json) and [test results](docs/test-results.md) for exact scope. The unsigned Windows ZIP, source ZIP and checksums are available on the [Alpha.9 release page](https://github.com/Osmanthusfish/mailcairn/releases/tag/v0.1.0-alpha.9). The real Gmail automatic-arrival TLS failure and other known limits remain.
 
-中文：alpha.9 完成公开发布前细节打磨：单键快捷键支持大小写并补齐 `,` 阅读设置双语提示，使用指南第04步增加桌面窗口“恢复备份…”操作说明，语言切换按钮加 `nowrap` 防折行，IMAP 超时放宽至20秒，精简中英 README 首屏并清理19张无引用旧截图。202项Python、66／31／19／11项Node回归、构建审计、实际EXE八组HTTP与Ego真机验收通过。仍未签名、未上传，原生恢复重测、Gmail后续新信及二机等限制保留。
+中文：alpha.9 完成公开发布前细节打磨：单键快捷键支持大小写并补齐 `,` 阅读设置双语提示，使用指南第04步增加桌面窗口“恢复备份…”操作说明，语言切换按钮加 `nowrap` 防折行，IMAP 超时放宽至20秒，精简中英 README 首屏并清理19张无引用旧截图。202项Python、66／31／19／11项Node回归、构建审计、实际EXE八组HTTP与Ego真机验收通过。Windows 包仍未签名，原生恢复重测、Gmail 后续新信和第二台 Windows 电脑验收仍待完成。
 
 ---
 

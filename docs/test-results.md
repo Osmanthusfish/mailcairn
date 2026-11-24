@@ -363,7 +363,7 @@ The Python suite covers parsing/MIME, Unicode, exact deduplication, search/filte
 - Restore rejects stale FTS and inconsistent receipts, handles publication failure, refuses a target created during validation, and reports unsupported hard links without leaving a partial target.
 - Invalid/duplicate HTTP lengths, Transfer-Encoding, interrupted uploads, header deadlines, request-worker overload and heavy-read limits; job polling remains available while heavy downloads occupy their slots.
 
-The Node checks run the real frontend code with a small DOM shim and controlled asynchronous responses. They cover search/reader races, cancellation, unavailable or corrupted preference storage, invalid filters, literal-text rendering and failed receipt verification. **They do not emulate browser layout or establish accessibility.** GitHub CI is configured for Windows/Linux/macOS × Python 3.11/3.13, with Node 24 checks; remote CI has not run.
+The Node checks run the real frontend code with a small DOM shim and controlled asynchronous responses. They cover search/reader races, cancellation, unavailable or corrupted preference storage, invalid filters, literal-text rendering and failed receipt verification. **They do not emulate browser layout or establish accessibility.** GitHub CI uses Windows, Linux and macOS with Python 3.11 and 3.13, plus Node 24. All six jobs passed for the [published Alpha.9 tag](https://github.com/Osmanthusfish/mailcairn/actions/runs/44240859265).
 
 ## Real browser checks
 

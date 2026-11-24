@@ -6,6 +6,8 @@
 
 MailCairn 将你的邮件持久保存在本机单一 SQLite 档案文件中。无需注册账号即可直接导入 `.mbox`／`.eml` 导出文件，或连接支持的邮箱在应用运行期间只读自动归档新的 INBOX 邮件；随时全文检索主题、联系人、正文与附件文件名，以安全的静态纯文本阅读信件、取回原始 `.eml` 与附件，并核对导入回执与档案哈希。运行无需 Docker、云服务、Node.js 环境或 AI 模型。
 
+[**下载 Windows 64 位便携版**](https://github.com/Osmanthusfish/mailcairn/releases/download/v0.1.0-alpha.9/MailCairn-0.1.0-alpha.9-windows-x64.zip) · [下载源码包](https://github.com/Osmanthusfish/mailcairn/releases/download/v0.1.0-alpha.9/MailCairn-0.1.0-alpha.9-source.zip) · [版本说明与 SHA-256 校验值](https://github.com/Osmanthusfish/mailcairn/releases/tag/v0.1.0-alpha.9)
+
 [架构设计](docs/architecture.md) · [测试报告](docs/test-results.md) · [调研与来源](docs/market-research.md) · [许可证](LICENSE)
 
 ![MailCairn Alpha.5 中文界面，邮件为公开合成样例](docs/screenshots/alpha5-reader-zh.png)
@@ -18,7 +20,7 @@ MailCairn 将你的邮件持久保存在本机单一 SQLite 档案文件中。�
 
 1. 将 **MailCairn-0.1.0-alpha.9-windows-x64.zip 全部解压**到自选文件夹。不要在 ZIP 中运行，也不要只复制 EXE。
 2. 打开解压后的文件夹，双击 **MailCairn.exe**。保留控制窗口，浏览器会打开档案。包内已包含 Python **3.13.17**。
-3. 选择**连接邮箱**或**导入文件**。详细连接步骤位于应用内的**使用指南 → 连接邮箱**。
+3. 选择**导入文件**添加已导出的邮件。如需自动归档，请参阅应用内的**使用指南 → 连接邮箱**。
 
 不需要源码目录、开发工作区或旧版安装。默认档案位于 `%LOCALAPPDATA%/MailCairn/archive.sqlite3`；“恢复备份…”会验证并恢复到新文件夹，“打开档案文件夹…”可重新打开已有档案。启动新版前请正常退出旧版控制窗口；只刷新旧网页不会升级后台。此 EXE 未签名。运行时组成和许可见[桌面审计](docs/desktop-dependencies.md)及[随附声明](licenses/desktop/README.txt)。
 
